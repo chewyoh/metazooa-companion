@@ -194,6 +194,13 @@ const Index = () => {
                 <RefreshCw className="w-4 h-4" />
                 שחק שוב
               </button>
+              <button
+                onClick={handleShare}
+                className="mt-3 mr-2 inline-flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors text-sm font-medium"
+              >
+                <Share2 className="w-4 h-4" />
+                שתף תוצאה
+              </button>
             </div>
           )}
 
