@@ -2582,7 +2582,6 @@ export const classificationLevels = [
   { key: "command", label: "פיקוד" },
   { key: "division", label: "אוגדה" },
   { key: "brigade", label: "חטיבה" },
-  { key: "type", label: "סוג" },
 ] as const;
 
 export type ClassificationKey = typeof classificationLevels[number]["key"];
@@ -2603,7 +2602,6 @@ export function compareBattalions(
       command: guess.command === target.command,
       division: guess.division === target.division,
       brigade: guess.brigade === target.brigade,
-      type: guess.type === target.type,
     },
     isCorrect: guess.id === target.id,
   };
