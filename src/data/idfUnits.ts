@@ -3107,9 +3107,8 @@ export function compareBattalions(
 }
 
 export function getDailyBattalion(): Battalion {
-  // Use date as seed for daily puzzle
-  const today = new Date();
-  const dateStr = `${today.getFullYear()}-${today.getMonth()}-${today.getDate()}`;
+  // Use date as seed for daily puzzle — deterministic across all clients
+  const dateStr = getTodayKey();
   let hash = 0;
   for (let i = 0; i < dateStr.length; i++) {
     const char = dateStr.charCodeAt(i);
