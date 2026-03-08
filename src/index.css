@@ -112,9 +112,13 @@
   }
 
   body {
-    @apply text-foreground;
+    @apply text-foreground bg-background;
     font-family: 'Heebo', sans-serif;
     direction: rtl;
+  }
+
+  .dark body,
+  body.dark-camo {
     background-color: hsl(100, 10%, 8%);
     background-image:
       radial-gradient(ellipse 120px 90px at 20% 15%, hsla(100, 40%, 25%, 0.6) 0%, transparent 70%),
@@ -127,6 +131,23 @@
       radial-gradient(ellipse 160px 90px at 65% 45%, hsla(150, 25%, 14%, 0.5) 0%, transparent 70%),
       radial-gradient(ellipse 110px 140px at 90% 10%, hsla(95, 35%, 24%, 0.55) 0%, transparent 70%),
       radial-gradient(ellipse 120px 100px at 5% 50%, hsla(105, 40%, 18%, 0.6) 0%, transparent 70%);
+    background-size: 500px 500px;
+    background-repeat: repeat;
+  }
+
+  :root body {
+    background-color: hsl(45, 20%, 90%);
+    background-image:
+      radial-gradient(ellipse 120px 90px at 20% 15%, hsla(100, 30%, 75%, 0.5) 0%, transparent 70%),
+      radial-gradient(ellipse 150px 100px at 75% 25%, hsla(130, 25%, 70%, 0.45) 0%, transparent 70%),
+      radial-gradient(ellipse 100px 80px at 45% 60%, hsla(80, 35%, 78%, 0.4) 0%, transparent 70%),
+      radial-gradient(ellipse 140px 110px at 10% 80%, hsla(140, 20%, 72%, 0.5) 0%, transparent 70%),
+      radial-gradient(ellipse 90px 130px at 85% 70%, hsla(90, 30%, 74%, 0.45) 0%, transparent 70%),
+      radial-gradient(ellipse 130px 80px at 55% 90%, hsla(110, 25%, 76%, 0.4) 0%, transparent 70%),
+      radial-gradient(ellipse 80px 100px at 30% 40%, hsla(70, 20%, 73%, 0.5) 0%, transparent 70%),
+      radial-gradient(ellipse 160px 90px at 65% 45%, hsla(150, 15%, 68%, 0.4) 0%, transparent 70%),
+      radial-gradient(ellipse 110px 140px at 90% 10%, hsla(95, 25%, 72%, 0.45) 0%, transparent 70%),
+      radial-gradient(ellipse 120px 100px at 5% 50%, hsla(105, 30%, 70%, 0.5) 0%, transparent 70%);
     background-size: 500px 500px;
     background-repeat: repeat;
   }
