@@ -182,6 +182,12 @@ const Index = () => {
           <h1 className="text-4xl font-black text-primary text-glow tracking-tight">
             🎖️ צה"לל - IDFle
           </h1>
+          {streak.current > 0 && (
+            <div className="flex items-center gap-1 px-2 py-1 bg-accent/20 border border-accent/30 rounded-full text-accent text-sm font-bold">
+              <Flame className="w-4 h-4" />
+              {streak.current}
+            </div>
+          )}
         </div>
         <p className="text-muted-foreground text-sm">
           נחשו את הגדוד היומי — כל ניחוש חושף את הקרבה במבנה הארגוני
