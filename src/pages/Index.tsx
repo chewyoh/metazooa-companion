@@ -73,6 +73,7 @@ const Index = () => {
         .filter(Boolean) as GuessResult[];
       setGuesses(results);
       setWon(saved.won);
+      if (!saved.won && results.length >= 10) setLost(true);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
