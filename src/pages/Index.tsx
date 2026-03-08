@@ -10,11 +10,12 @@ import {
 import { GuessInput } from "@/components/GuessInput";
 import { GuessHistory } from "@/components/GuessHistory";
 import { OrgTree } from "@/components/OrgTree";
-import { Trophy, HelpCircle, X, RefreshCw, Gamepad2, Network, Share2 } from "lucide-react";
+import { Trophy, HelpCircle, X, RefreshCw, Gamepad2, Network, Share2, Flame } from "lucide-react";
 import { toast } from "sonner";
 import { classificationLevels } from "@/data/idfUnits";
 
 const STORAGE_KEY = "idf-game-state";
+const STREAK_KEY = "idf-streak";
 
 interface GameState {
   dateKey: string;
@@ -39,6 +40,45 @@ function saveState(state: GameState) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 }
 
+interface StreakData {
+  current: number;
+  max: number;
+  lastWinDate: string;
+}
+
+function loadStreak(): StreakData {
+  try {
+    const raw = localStorage.getItem(STREAK_KEY);
+    if (!raw) return { current: 0, max: 0, lastWinDate: "" };
+    return JSON.parse(raw) as StreakData;
+  } catch {
+    return { current: 0, max: 0, lastWinDate: "" };
+  }
+}
+
+function updateStreak(won: boolean): StreakData {
+  const streak = loadStreak();
+  const today = getTodayKey();
+
+  if (streak.lastWinDate === today) return streak; // already recorded today
+
+  if (won) {
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    const yesterdayKey = yesterday.toISOString().slice(0, 10);
+
+    const newCurrent = streak.lastWinDate === yesterdayKey ? streak.current + 1 : 1;
+    const newMax = Math.max(newCurrent, streak.max);
+    const updated: StreakData = { current: newCurrent, max: newMax, lastWinDate: today };
+    localStorage.setItem(STREAK_KEY, JSON.stringify(updated));
+    return updated;
+  } else {
+    const updated: StreakData = { current: 0, max: streak.max, lastWinDate: streak.lastWinDate };
+    localStorage.setItem(STREAK_KEY, JSON.stringify(updated));
+    return updated;
+  }
+}
+
 const Index = () => {
   const [target, setTarget] = useState<Battalion>(() => {
     const saved = loadState();
@@ -54,6 +94,7 @@ const Index = () => {
   const [showHelp, setShowHelp] = useState(false);
   const [isFreePlay, setIsFreePlay] = useState(false);
   const [activeTab, setActiveTab] = useState<"game" | "tree">("game");
+  const [streak, setStreak] = useState<StreakData>(() => loadStreak());
 
   // Load saved state only for daily mode
   useEffect(() => {
@@ -86,8 +127,14 @@ const Index = () => {
     setGuesses(newGuesses);
 
     const isWon = result.isCorrect;
-    if (isWon) setWon(true);
-    else if (newGuesses.length >= 10) setLost(true);
+    const isLost = !isWon && newGuesses.length >= 10;
+    if (isWon) {
+      setWon(true);
+      if (!isFreePlay) setStreak(updateStreak(true));
+    } else if (isLost) {
+      setLost(true);
+      if (!isFreePlay) setStreak(updateStreak(false));
+    }
 
     if (!isFreePlay) {
       saveState({
@@ -112,7 +159,8 @@ const Index = () => {
       .join("\n");
 
     const status = won ? `✅ ב-${guesses.length}/10 ניחושים` : "❌ לא הצלחתי";
-    const text = `🎖️ צה"לל - IDFle\n${status}\n\n${grid}\n\nhttps://idfle.lovable.app`;
+    const streakText = streak.current > 0 ? `\n🔥 סטריק: ${streak.current}` : "";
+    const text = `🎖️ צה"לל - IDFle\n${status}${streakText}\n\n${grid}\n\nhttps://idfle.lovable.app`;
 
     navigator.clipboard.writeText(text).then(() => {
       toast.success("התוצאה הועתקה! שתף עם חברים 🎖️");
@@ -135,6 +183,12 @@ const Index = () => {
           <h1 className="text-4xl font-black text-primary text-glow tracking-tight">
             🎖️ צה"לל - IDFle
           </h1>
+          {streak.current > 0 && (
+            <div className="flex items-center gap-1 px-2 py-1 bg-accent/20 border border-accent/30 rounded-full text-accent text-sm font-bold">
+              <Flame className="w-4 h-4" />
+              {streak.current}
+            </div>
+          )}
         </div>
         <p className="text-muted-foreground text-sm">
           נחשו את הגדוד היומי — כל ניחוש חושף את הקרבה במבנה הארגוני
