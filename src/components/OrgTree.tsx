@@ -105,6 +105,7 @@ const divisionWikiMap: Record<string, string> = {
   'אוגדה 143 "פיירפוקס" (143)': "https://he.wikipedia.org/wiki/אוגדה_143",
   'אוגדה 146 "המפץ" (146)': "https://he.wikipedia.org/wiki/אוגדה_146",
   'אוגדה 96 "גלעד" (96)': "https://he.wikipedia.org/wiki/אוגדה_96",
+  'אוגדה 252 "סיני" (252)': "https://he.wikipedia.org/wiki/עוצבת_סיני",
 };
 
 function buildTree(): TreeNode[] {
