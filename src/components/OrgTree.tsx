@@ -1,11 +1,12 @@
 import { useState, useMemo } from "react";
-import { battalions } from "@/data/idfUnits";
+import { Battalion, battalions } from "@/data/idfUnits";
 import { ChevronLeft, ChevronDown, ExternalLink } from "lucide-react";
 
 interface TreeNode {
   label: string;
   children: TreeNode[];
   wikiUrl?: string;
+  battalionId?: string;
 }
 
 // Mapping brigade keys "name (number)" to Hebrew Wikipedia articles
@@ -102,7 +103,7 @@ const divisionWikiMap: Record<string, string> = {
 };
 
 function buildTree(): TreeNode[] {
-  const commandMap = new Map<string, Map<string, Map<string, string[]>>>();
+  const commandMap = new Map<string, Map<string, Map<string, { label: string; battalionId: string }[]>>>();
 
   for (const b of battalions) {
     if (!commandMap.has(b.command)) commandMap.set(b.command, new Map());
@@ -112,7 +113,7 @@ function buildTree(): TreeNode[] {
     const brigMap = divMap.get(divKey)!;
     const brigKey = `${b.brigade} (${b.brigadeNumber})`;
     if (!brigMap.has(brigKey)) brigMap.set(brigKey, []);
-    brigMap.get(brigKey)!.push(`${b.name} (${b.number})`);
+    brigMap.get(brigKey)!.push({ label: `${b.name} (${b.number})`, battalionId: b.id });
   }
 
   const tree: TreeNode[] = [];
@@ -123,7 +124,7 @@ function buildTree(): TreeNode[] {
       for (const [brig, bns] of brigMap) {
         const brigNode: TreeNode = {
           label: brig,
-          children: bns.map((name) => ({ label: name, children: [] })),
+          children: bns.map((bn) => ({ label: bn.label, children: [], battalionId: bn.battalionId })),
           wikiUrl: brigadeWikiMap[brig],
         };
         divNode.children.push(brigNode);
@@ -149,7 +150,7 @@ const depthBg = [
   "bg-muted/50",
 ];
 
-function TreeNodeComponent({ node, depth = 0 }: { node: TreeNode; depth?: number }) {
+function TreeNodeComponent({ node, depth = 0, onBattalionClick }: { node: TreeNode; depth?: number; onBattalionClick?: (battalion: Battalion) => void }) {
   const [expanded, setExpanded] = useState(depth < 1);
   const isLeaf = node.children.length === 0;
   const colorClass = depthColors[Math.min(depth, depthColors.length - 1)];
@@ -157,9 +158,17 @@ function TreeNodeComponent({ node, depth = 0 }: { node: TreeNode; depth?: number
 
   if (isLeaf) {
     return (
-      <div className={`mr-4 py-1.5 px-3 rounded-md text-sm text-foreground ${bgClass} border-r-2 ${colorClass}`}>
+      <button
+        onClick={() => {
+          if (node.battalionId && onBattalionClick) {
+            const battalion = battalions.find(b => b.id === node.battalionId);
+            if (battalion) onBattalionClick(battalion);
+          }
+        }}
+        className={`mr-4 py-1.5 px-3 rounded-md text-sm text-foreground ${bgClass} border-r-2 ${colorClass} w-full text-right hover:bg-primary/20 transition-colors cursor-pointer`}
+      >
         {node.label}
-      </div>
+      </button>
     );
   }
 
@@ -202,7 +211,7 @@ function TreeNodeComponent({ node, depth = 0 }: { node: TreeNode; depth?: number
       {expanded && (
         <div className="mr-4 mt-1 space-y-1 border-r border-border pr-2">
           {node.children.map((child, i) => (
-            <TreeNodeComponent key={i} node={child} depth={depth + 1} />
+            <TreeNodeComponent key={i} node={child} depth={depth + 1} onBattalionClick={onBattalionClick} />
           ))}
         </div>
       )}
@@ -210,7 +219,7 @@ function TreeNodeComponent({ node, depth = 0 }: { node: TreeNode; depth?: number
   );
 }
 
-export function OrgTree() {
+export function OrgTree({ onBattalionClick }: { onBattalionClick?: (battalion: Battalion) => void }) {
   const tree = useMemo(buildTree, []);
 
   return (
@@ -234,7 +243,7 @@ export function OrgTree() {
         </div>
       </div>
       {tree.map((node, i) => (
-        <TreeNodeComponent key={i} node={node} depth={0} />
+        <TreeNodeComponent key={i} node={node} depth={0} onBattalionClick={onBattalionClick} />
       ))}
     </div>
   );

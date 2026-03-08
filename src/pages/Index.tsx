@@ -228,7 +228,12 @@ const Index = () => {
           </div>
         </>
       ) : (
-        <OrgTree />
+        <OrgTree onBattalionClick={(battalion) => {
+          if (!won && !lost && !guessedIds.has(battalion.id)) {
+            setActiveTab("game");
+            handleGuess(battalion);
+          }
+        }} />
       )}
 
       {/* Help modal */}
