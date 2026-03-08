@@ -84,9 +84,14 @@ const brigadeWikiMap: Record<string, string> = {
   "עוצבת אדירים (7338)": "https://he.wikipedia.org/wiki/עוצבת_אדירים",
   "עוצבת הנשר (226)": "https://he.wikipedia.org/wiki/עוצבת_הנשר",
   "עוצבת התקומה (213)": "https://he.wikipedia.org/wiki/עוצבת_התקומה",
+  "חטיבת הנגב (12)": "https://he.wikipedia.org/wiki/חטיבת_הנגב",
+  "חטיבת ירושלים (16)": "https://he.wikipedia.org/wiki/חטיבת_ירושלים",
+  "חטיבת רמון (261)": "https://he.wikipedia.org/wiki/חטיבה_261",
+  "חטיבת הראל (10)": "https://he.wikipedia.org/wiki/חטיבת_הראל",
+  "חטיבת המחץ (14)": "https://he.wikipedia.org/wiki/חטיבה_14",
+  "עוצבת התבור (454)": "https://he.wikipedia.org/wiki/עוצבת_התבור",
   
 };
-
 const divisionWikiMap: Record<string, string> = {
   'אוגדה 36 "געש" (36)': "https://he.wikipedia.org/wiki/אוגדה_36",
   'אוגדה 98 "האש" (98)': "https://he.wikipedia.org/wiki/אוגדה_98",
@@ -100,6 +105,7 @@ const divisionWikiMap: Record<string, string> = {
   'אוגדה 143 "פיירפוקס" (143)': "https://he.wikipedia.org/wiki/אוגדה_143",
   'אוגדה 146 "המפץ" (146)': "https://he.wikipedia.org/wiki/אוגדה_146",
   'אוגדה 96 "גלעד" (96)': "https://he.wikipedia.org/wiki/אוגדה_96",
+  'אוגדה 252 "סיני" (252)': "https://he.wikipedia.org/wiki/עוצבת_סיני",
 };
 
 function buildTree(): TreeNode[] {
