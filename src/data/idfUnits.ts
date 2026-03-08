@@ -2453,31 +2453,6 @@ export const battalions: Battalion[] = [
     type: "מילואים",
   },
 
-  // ===== חטיבה 679 "שריון מילואים" - אוגדה 36 - מילואים =====
-  {
-    id: "res-679-1",
-    name: 'גדוד 4679',
-    nameEn: '4679th Reserve Armored Battalion',
-    number: 4679,
-    brigade: 'חטיבה 679',
-    brigadeNumber: 679,
-    division: 'אוגדה 36 "געש"',
-    divisionNumber: 36,
-    command: "פיקוד צפון",
-    type: "מילואים",
-  },
-  {
-    id: "res-679-2",
-    name: 'גדוד 4680',
-    nameEn: '4680th Reserve Armored Battalion',
-    number: 4680,
-    brigade: 'חטיבה 679',
-    brigadeNumber: 679,
-    division: 'אוגדה 36 "געש"',
-    divisionNumber: 36,
-    command: "פיקוד צפון",
-    type: "מילואים",
-  },
 
   // ===== חטיבת כרמלי (2) - אוגדה 146 "המפץ" - פיקוד צפון =====
   {
