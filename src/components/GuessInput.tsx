@@ -21,8 +21,7 @@ export function GuessInput({ onGuess, disabled, guessedIds }: GuessInputProps) {
           !guessedIds.has(b.id) &&
           (b.name.includes(query) ||
             b.nameEn.toLowerCase().includes(query.toLowerCase()) ||
-            String(b.number).includes(query) ||
-            b.brigade.includes(query))
+            String(b.number).includes(query))
       )
     : [];
 
