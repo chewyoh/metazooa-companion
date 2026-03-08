@@ -101,8 +101,8 @@ export const battalions: Battalion[] = [
   },
   {
     id: "para-gadsar",
-    name: 'גדוד סיור "שפיפון"',
-    nameEn: 'Paratroopers Reconnaissance "Shfifon"',
+    name: 'סיירת צנחנים "שרף"',
+    nameEn: 'Paratroopers Reconnaissance "Saraf"',
     number: 5135,
     brigade: 'חטיבת הצנחנים',
     brigadeNumber: 35,
