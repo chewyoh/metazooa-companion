@@ -100,9 +100,6 @@ export function GuessInput({ onGuess, disabled, guessedIds }: GuessInputProps) {
               <div className="font-semibold text-foreground">
                 {battalion.name}
               </div>
-              <div className="text-sm text-muted-foreground">
-                {battalion.brigade} • {battalion.type}
-              </div>
             </button>
           ))}
         </div>
