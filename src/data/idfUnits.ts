@@ -536,7 +536,7 @@ export const battalions: Battalion[] = [
     type: "ארטילריה",
   },
 
-  // ===== חטיבה 460 "בני אור" - בית הספר לשריון =====
+  // ===== חטיבה 460 "בני אור" - אוגדה 38 "ההכשרות" - זרוע היבשה =====
   {
     id: "460-195",
     name: 'גדוד 195',
@@ -544,9 +544,9 @@ export const battalions: Battalion[] = [
     number: 195,
     brigade: 'חטיבת בני אור',
     brigadeNumber: 460,
-    division: 'בית הספר לשריון',
-    divisionNumber: 460,
-    command: "פיקוד מרכז",
+    division: 'אוגדה 38 "ההכשרות"',
+    divisionNumber: 38,
+    command: "זרוע היבשה",
     type: "שריון",
   },
 
