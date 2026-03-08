@@ -932,17 +932,17 @@ export const battalions: Battalion[] = [
     type: "מילואים",
   },
 
-  // ===== חטיבה 8 "שריון מילואים" - אוגדה 162 - מילואים =====
+  // ===== חטיבת הזקן (8) - אוגדה 91 "הגליל" - פיקוד צפון - מילואים =====
   {
     id: "res-8-1",
     name: 'גדוד 129',
     nameEn: '129th Reserve Armored Battalion',
     number: 129,
-    brigade: 'חטיבה 8',
+    brigade: 'חטיבת הזקן',
     brigadeNumber: 8,
-    division: 'אוגדה 162 "הפלדה"',
-    divisionNumber: 162,
-    command: "פיקוד דרום",
+    division: 'אוגדה 91 "הגליל"',
+    divisionNumber: 91,
+    command: "פיקוד צפון",
     type: "מילואים",
   },
   {
@@ -950,11 +950,11 @@ export const battalions: Battalion[] = [
     name: 'גדוד 126',
     nameEn: '126th Reserve Armored Battalion',
     number: 126,
-    brigade: 'חטיבה 8',
+    brigade: 'חטיבת הזקן',
     brigadeNumber: 8,
-    division: 'אוגדה 162 "הפלדה"',
-    divisionNumber: 162,
-    command: "פיקוד דרום",
+    division: 'אוגדה 91 "הגליל"',
+    divisionNumber: 91,
+    command: "פיקוד צפון",
     type: "מילואים",
   },
 
