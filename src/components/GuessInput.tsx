@@ -74,7 +74,7 @@ export function GuessInput({ onGuess, disabled, guessedIds }: GuessInputProps) {
           onBlur={() => setTimeout(() => setIsOpen(false), 200)}
           onKeyDown={handleKeyDown}
           disabled={disabled}
-          placeholder="הקלד שם גדוד, מספר או חטיבה..."
+          placeholder="הקלד שם גדוד או מספר גדוד"
           className="w-full bg-input border border-border rounded-lg pr-10 pl-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           dir="rtl"
         />
