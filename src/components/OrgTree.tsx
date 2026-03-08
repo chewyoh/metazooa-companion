@@ -118,7 +118,7 @@ function buildTree(): TreeNode[] {
   for (const [cmd, divMap] of commandMap) {
     const cmdNode: TreeNode = { label: cmd, children: [] };
     for (const [div, brigMap] of divMap) {
-      const divNode: TreeNode = { label: div, children: [] };
+      const divNode: TreeNode = { label: div, children: [], wikiUrl: divisionWikiMap[div] };
       for (const [brig, bns] of brigMap) {
         const brigNode: TreeNode = {
           label: brig,
