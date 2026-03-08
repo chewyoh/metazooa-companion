@@ -94,6 +94,7 @@ const Index = () => {
   const [showHelp, setShowHelp] = useState(false);
   const [isFreePlay, setIsFreePlay] = useState(false);
   const [activeTab, setActiveTab] = useState<"game" | "tree">("game");
+  const [streak, setStreak] = useState<StreakData>(() => loadStreak());
 
   // Load saved state only for daily mode
   useEffect(() => {
