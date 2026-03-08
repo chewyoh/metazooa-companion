@@ -373,8 +373,31 @@ export const battalions: Battalion[] = [
     command: "פיקוד צפון",
     type: "שריון",
   },
+  {
+    id: "7-353",
+    name: 'פלחי"ק 353',
+    nameEn: 'PALCHIK 353',
+    number: 353,
+    brigade: 'חטיבה 7',
+    brigadeNumber: 7,
+    division: 'אוגדה 36 "געש"',
+    divisionNumber: 36,
+    command: "פיקוד צפון",
+    type: "שריון",
+  },
+  {
+    id: "7-gdsam7",
+    name: 'גדס"ם 7',
+    nameEn: 'Support Battalion 7',
+    number: 7,
+    brigade: 'חטיבה 7',
+    brigadeNumber: 7,
+    division: 'אוגדה 36 "געש"',
+    divisionNumber: 36,
+    command: "פיקוד צפון",
+    type: "שריון",
+  },
 
-  // ===== חטיבה 188 "ברק" - אוגדה 36 - פיקוד צפון =====
   {
     id: "188-53",
     name: 'גדוד 53',
