@@ -101,8 +101,8 @@ export const battalions: Battalion[] = [
   },
   {
     id: "para-gadsar",
-    name: 'גדוד סיור "שפיפון"',
-    nameEn: 'Paratroopers Reconnaissance "Shfifon"',
+    name: 'סיירת צנחנים "שרף"',
+    nameEn: 'Paratroopers Reconnaissance "Saraf"',
     number: 5135,
     brigade: 'חטיבת הצנחנים',
     brigadeNumber: 35,
@@ -154,6 +154,18 @@ export const battalions: Battalion[] = [
     name: 'גדוד סיור "שועלי שמשון"',
     nameEn: 'Patrol Battalion "Samson\'s Foxes"',
     number: 846,
+    brigade: 'חטיבת גבעתי',
+    brigadeNumber: 84,
+    division: 'אוגדה 162 "הפלדה"',
+    divisionNumber: 162,
+    command: "פיקוד דרום",
+    type: "חי\"ר",
+  },
+  {
+    id: "givati-607",
+    name: 'גדוד 607',
+    nameEn: '607th Battalion',
+    number: 607,
     brigade: 'חטיבת גבעתי',
     brigadeNumber: 84,
     division: 'אוגדה 162 "הפלדה"',
@@ -349,6 +361,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד צפון",
     type: "שריון",
   },
+  {
+    id: "7arm-603",
+    name: 'גדוד 603',
+    nameEn: '603rd Armored Battalion',
+    number: 603,
+    brigade: 'חטיבה 7',
+    brigadeNumber: 7,
+    division: 'אוגדה 36 "געש"',
+    divisionNumber: 36,
+    command: "פיקוד צפון",
+    type: "שריון",
+  },
 
   // ===== חטיבה 188 "ברק" - אוגדה 36 - פיקוד צפון =====
   {
@@ -425,6 +449,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד דרום",
     type: "שריון",
   },
+  {
+    id: "401-601",
+    name: 'גדוד 601',
+    nameEn: '601st Armored Battalion',
+    number: 601,
+    brigade: 'חטיבת עקבות הברזל',
+    brigadeNumber: 401,
+    division: 'אוגדה 162 "הפלדה"',
+    divisionNumber: 162,
+    command: "פיקוד דרום",
+    type: "שריון",
+  },
 
   // ===== חטיבה 460 "בני אור" - בית הספר לשריון =====
   {
@@ -434,9 +470,9 @@ export const battalions: Battalion[] = [
     number: 195,
     brigade: 'חטיבת בני אור',
     brigadeNumber: 460,
-    division: 'אוגדה 162 "הפלדה"',
-    divisionNumber: 162,
-    command: "פיקוד דרום",
+    division: 'בית הספר לשריון',
+    divisionNumber: 460,
+    command: "פיקוד מרכז",
     type: "שריון",
   },
 
@@ -465,12 +501,13 @@ export const battalions: Battalion[] = [
     command: "פיקוד צפון",
     type: "ארטילריה",
   },
+  // ===== חטיבת ארטילריה - אוגדה 210 =====
   {
     id: "art-282-1",
     name: 'גדוד תותחנים 282',
     nameEn: '282nd Artillery Battalion',
     number: 282,
-    brigade: 'חטיבת גולן',
+    brigade: 'ארטילריה אוגדה 210',
     brigadeNumber: 282,
     division: 'אוגדה 210 "בשן"',
     divisionNumber: 210,
