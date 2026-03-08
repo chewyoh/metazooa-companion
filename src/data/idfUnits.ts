@@ -2305,7 +2305,7 @@ export const battalions: Battalion[] = [
     nameEn: 'Fire Battalion 9238',
     number: 9238,
     brigade: 'עוצבת התקומה',
-    brigadeNumber: 5200,
+    brigadeNumber: 213,
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
