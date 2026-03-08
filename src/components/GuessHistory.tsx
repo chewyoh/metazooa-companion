@@ -39,9 +39,9 @@ export function GuessHistory({ guesses }: GuessHistoryProps) {
                     : "text-foreground"
                 }`}
               >
-                <div>{guess.battalion.name}</div>
+                <div>{guess.battalion.name} <span className="text-muted-foreground font-normal">({guess.battalion.number})</span></div>
                 <div className="text-xs text-muted-foreground font-normal">
-                  {guess.battalion.brigade}
+                  {guess.battalion.brigade} ({guess.battalion.brigadeNumber})
                 </div>
               </td>
               {classificationLevels.map((level, colIdx) => {

@@ -97,7 +97,7 @@ export function GuessInput({ onGuess, disabled, guessedIds }: GuessInputProps) {
               }`}
             >
               <div className="font-semibold text-foreground">
-                {battalion.name}
+                {battalion.name} <span className="text-muted-foreground font-normal text-sm">({battalion.number})</span>
               </div>
             </button>
           ))}
