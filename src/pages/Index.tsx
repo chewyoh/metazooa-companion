@@ -42,6 +42,7 @@ const Index = () => {
   const [won, setWon] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [isFreePlay, setIsFreePlay] = useState(false);
+  const [activeTab, setActiveTab] = useState<"game" | "tree">("game");
 
   // Load saved state only for daily mode
   useEffect(() => {
