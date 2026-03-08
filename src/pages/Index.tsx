@@ -164,6 +164,34 @@ const Index = () => {
                   setTarget(battalions[randomIndex]);
                   setGuesses([]);
                   setWon(false);
+                  setLost(false);
+                  setIsFreePlay(true);
+                }}
+                className="mt-3 inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+              >
+                <RefreshCw className="w-4 h-4" />
+                שחק שוב
+              </button>
+            </div>
+          )}
+
+          {/* Lose state */}
+          {lost && !won && (
+            <div className="mb-6 p-4 bg-miss/10 border border-miss/30 rounded-lg text-center max-w-md animate-slide-down">
+              <p className="text-miss font-bold text-lg">הפסדת! 😞</p>
+              <p className="text-foreground text-sm mt-1">
+                הגדוד היומי היה: <strong>{target.name}</strong> ({target.number})
+              </p>
+              <p className="text-muted-foreground text-xs mt-1">
+                {target.brigade} — {target.command}
+              </p>
+              <button
+                onClick={() => {
+                  const randomIndex = Math.floor(Math.random() * battalions.length);
+                  setTarget(battalions[randomIndex]);
+                  setGuesses([]);
+                  setWon(false);
+                  setLost(false);
                   setIsFreePlay(true);
                 }}
                 className="mt-3 inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
