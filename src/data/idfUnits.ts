@@ -61,8 +61,19 @@ export const battalions: Battalion[] = [
     command: "פיקוד צפון",
     type: "חי\"ר",
   },
+  {
+    id: "golani-5111",
+    name: 'גדס"ם גולני 5111',
+    nameEn: 'Golani Support Battalion 5111',
+    number: 5111,
+    brigade: 'חטיבת גולני',
+    brigadeNumber: 1,
+    division: 'אוגדה 36 "געש"',
+    divisionNumber: 36,
+    command: "פיקוד צפון",
+    type: "חי\"ר",
+  },
 
-  // ===== חטיבת הצנחנים (35) - אוגדה 98 - פיקוד מרכז =====
   {
     id: "para-101",
     name: 'גדוד 101 "פתן"',
