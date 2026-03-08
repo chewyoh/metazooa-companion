@@ -2281,7 +2281,7 @@ export const battalions: Battalion[] = [
     nameEn: 'Rocket Battalion 412',
     number: 412,
     brigade: 'עוצבת התקומה',
-    brigadeNumber: 5200,
+    brigadeNumber: 213,
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
