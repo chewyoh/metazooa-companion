@@ -88,6 +88,7 @@ function buildTree(): TreeNode[] {
         const brigNode: TreeNode = {
           label: brig,
           children: bns.map((name) => ({ label: name, children: [] })),
+          wikiUrl: brigadeWikiMap[brig],
         };
         divNode.children.push(brigNode);
       }
