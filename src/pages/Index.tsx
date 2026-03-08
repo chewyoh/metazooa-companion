@@ -89,6 +89,7 @@ const Index = () => {
         dateKey: getTodayKey(),
         guessIds: newGuesses.map((g) => g.battalion.id),
         won: isWon,
+        targetId: target.id,
       });
     }
   };
