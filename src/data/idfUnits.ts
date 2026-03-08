@@ -2582,7 +2582,6 @@ export const classificationLevels = [
   { key: "command", label: "פיקוד" },
   { key: "division", label: "אוגדה" },
   { key: "brigade", label: "חטיבה" },
-  { key: "type", label: "סוג" },
 ] as const;
 
 export type ClassificationKey = typeof classificationLevels[number]["key"];
