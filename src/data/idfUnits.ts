@@ -536,7 +536,7 @@ export const battalions: Battalion[] = [
     type: "ארטילריה",
   },
 
-  // ===== חטיבה 460 "בני אור" - בית הספר לשריון =====
+  // ===== חטיבה 460 "בני אור" - אוגדה 38 "ההכשרות" - זרוע היבשה =====
   {
     id: "460-195",
     name: 'גדוד 195',
@@ -544,9 +544,9 @@ export const battalions: Battalion[] = [
     number: 195,
     brigade: 'חטיבת בני אור',
     brigadeNumber: 460,
-    division: 'בית הספר לשריון',
-    divisionNumber: 460,
-    command: "פיקוד מרכז",
+    division: 'אוגדה 38 "ההכשרות"',
+    divisionNumber: 38,
+    command: "זרוע היבשה",
     type: "שריון",
   },
 
@@ -590,7 +590,7 @@ export const battalions: Battalion[] = [
     type: "ארטילריה",
   },
 
-  // ===== חטיבת בסלמ"ח (828) - בית ספר לחי"ר =====
+  // ===== חטיבת בסלמ"ח (828) - אוגדה 38 "ההכשרות" - זרוע היבשה =====
   {
     id: "bislamach-1",
     name: 'גדוד הכשרה 828',
@@ -598,10 +598,66 @@ export const battalions: Battalion[] = [
     number: 828,
     brigade: 'חטיבת בסלמ"ח',
     brigadeNumber: 828,
-    division: 'אוגדה 99 "הבזק"',
-    divisionNumber: 99,
-    command: "פיקוד מרכז",
+    division: 'אוגדה 38 "ההכשרות"',
+    divisionNumber: 38,
+    command: "זרוע היבשה",
     type: "חי\"ר",
+  },
+
+  // ===== בה"ד 1 - בית הספר לקצינים - אוגדה 38 "ההכשרות" =====
+  {
+    id: "bahad1-1",
+    name: 'בה"ד 1 - בית הספר לקצינים',
+    nameEn: 'Officers Training School (Bahad 1)',
+    number: 1,
+    brigade: 'בה"ד 1',
+    brigadeNumber: 1001,
+    division: 'אוגדה 38 "ההכשרות"',
+    divisionNumber: 38,
+    command: "זרוע היבשה",
+    type: "הכשרה",
+  },
+
+  // ===== בהל"צ - בית הספר להנדסה צבאית - אוגדה 38 "ההכשרות" =====
+  {
+    id: "bahalatz-14",
+    name: 'בהל"צ - בית הספר להנדסה צבאית',
+    nameEn: 'Military Engineering School (Bahad 14)',
+    number: 14,
+    brigade: 'בהל"צ',
+    brigadeNumber: 14,
+    division: 'אוגדה 38 "ההכשרות"',
+    divisionNumber: 38,
+    command: "זרוע היבשה",
+    type: "הכשרה",
+  },
+
+  // ===== חטיבת האש שבטה - אוגדה 38 "ההכשרות" =====
+  {
+    id: "shivta-fire",
+    name: 'חטיבת האש שבטה',
+    nameEn: 'Shivta Fire Brigade',
+    number: 3800,
+    brigade: 'חטיבת האש שבטה',
+    brigadeNumber: 3800,
+    division: 'אוגדה 38 "ההכשרות"',
+    divisionNumber: 38,
+    command: "זרוע היבשה",
+    type: "הכשרה",
+  },
+
+  // ===== בהל"ג - בית הספר להגנת הגבולות - אוגדה 38 "ההכשרות" =====
+  {
+    id: "bahalag-1",
+    name: 'בהל"ג - בית הספר להגנת הגבולות',
+    nameEn: 'Border Defense School',
+    number: 3801,
+    brigade: 'בהל"ג',
+    brigadeNumber: 3801,
+    division: 'אוגדה 38 "ההכשרות"',
+    divisionNumber: 38,
+    command: "זרוע היבשה",
+    type: "הכשרה",
   },
 
   // ===== חטיבת הבקעה (417) - אוגדה 96 "גלעד" - פיקוד מרכז =====
