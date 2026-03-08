@@ -159,7 +159,8 @@ const Index = () => {
       .join("\n");
 
     const status = won ? `✅ ב-${guesses.length}/10 ניחושים` : "❌ לא הצלחתי";
-    const text = `🎖️ צה"לל - IDFle\n${status}\n\n${grid}\n\nhttps://idfle.lovable.app`;
+    const streakText = streak.current > 0 ? `\n🔥 סטריק: ${streak.current}` : "";
+    const text = `🎖️ צה"לל - IDFle\n${status}${streakText}\n\n${grid}\n\nhttps://idfle.lovable.app`;
 
     navigator.clipboard.writeText(text).then(() => {
       toast.success("התוצאה הועתקה! שתף עם חברים 🎖️");
