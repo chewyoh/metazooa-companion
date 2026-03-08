@@ -349,6 +349,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד צפון",
     type: "שריון",
   },
+  {
+    id: "7arm-603",
+    name: 'גדוד 603',
+    nameEn: '603rd Armored Battalion',
+    number: 603,
+    brigade: 'חטיבה 7',
+    brigadeNumber: 7,
+    division: 'אוגדה 36 "געש"',
+    divisionNumber: 36,
+    command: "פיקוד צפון",
+    type: "שריון",
+  },
 
   // ===== חטיבה 188 "ברק" - אוגדה 36 - פיקוד צפון =====
   {
