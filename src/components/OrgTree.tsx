@@ -82,7 +82,7 @@ const brigadeWikiMap: Record<string, string> = {
   "חטיבת קלע דוד (214)": "https://he.wikipedia.org/wiki/קלע_דוד",
   "עוצבת אדירים (5091)": "https://he.wikipedia.org/wiki/עוצבת_אדירים",
   "עוצבת הנשר (226)": "https://he.wikipedia.org/wiki/עוצבת_הנשר",
-  "עוצבת התקומה (5200)": "https://he.wikipedia.org/wiki/עוצבת_התקומה",
+  "עוצבת התקומה (213)": "https://he.wikipedia.org/wiki/עוצבת_התקומה",
 };
 
 const divisionWikiMap: Record<string, string> = {
