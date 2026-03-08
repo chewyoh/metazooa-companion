@@ -48,6 +48,7 @@ const Index = () => {
   });
   const [guesses, setGuesses] = useState<GuessResult[]>([]);
   const [won, setWon] = useState(false);
+  const [lost, setLost] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [isFreePlay, setIsFreePlay] = useState(false);
   const [activeTab, setActiveTab] = useState<"game" | "tree">("game");
@@ -72,6 +73,7 @@ const Index = () => {
         .filter(Boolean) as GuessResult[];
       setGuesses(results);
       setWon(saved.won);
+      if (!saved.won && results.length >= 10) setLost(true);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -83,6 +85,7 @@ const Index = () => {
 
     const isWon = result.isCorrect;
     if (isWon) setWon(true);
+    else if (newGuesses.length >= 10) setLost(true);
 
     if (!isFreePlay) {
       saveState({
@@ -161,6 +164,34 @@ const Index = () => {
                   setTarget(battalions[randomIndex]);
                   setGuesses([]);
                   setWon(false);
+                  setLost(false);
+                  setIsFreePlay(true);
+                }}
+                className="mt-3 inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+              >
+                <RefreshCw className="w-4 h-4" />
+                שחק שוב
+              </button>
+            </div>
+          )}
+
+          {/* Lose state */}
+          {lost && !won && (
+            <div className="mb-6 p-4 bg-miss/10 border border-miss/30 rounded-lg text-center max-w-md animate-slide-down">
+              <p className="text-miss font-bold text-lg">הפסדת! 😞</p>
+              <p className="text-foreground text-sm mt-1">
+                הגדוד היומי היה: <strong>{target.name}</strong> ({target.number})
+              </p>
+              <p className="text-muted-foreground text-xs mt-1">
+                {target.brigade} — {target.command}
+              </p>
+              <button
+                onClick={() => {
+                  const randomIndex = Math.floor(Math.random() * battalions.length);
+                  setTarget(battalions[randomIndex]);
+                  setGuesses([]);
+                  setWon(false);
+                  setLost(false);
                   setIsFreePlay(true);
                 }}
                 className="mt-3 inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
@@ -173,13 +204,13 @@ const Index = () => {
 
           <GuessInput
             onGuess={handleGuess}
-            disabled={won}
+            disabled={won || lost}
             guessedIds={guessedIds}
           />
 
-          {guesses.length > 0 && !won && (
+          {guesses.length > 0 && !won && !lost && (
             <p className="text-muted-foreground text-sm mt-3">
-              ניחושים: {guesses.length}
+              ניחושים: {guesses.length}/10
             </p>
           )}
 
