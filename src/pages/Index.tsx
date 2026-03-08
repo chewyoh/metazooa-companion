@@ -373,6 +373,8 @@ const Index = () => {
           </div>
         </div>
       )}
+      {/* Theme toggle */}
+      <ThemeToggle />
     </div>
   );
 };
