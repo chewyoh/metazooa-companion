@@ -1915,6 +1915,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד מרכז",
     type: "מילואים",
   },
+  {
+    id: "res-179-5579",
+    name: 'גדס"ם 5579',
+    nameEn: 'Support Battalion 5579',
+    number: 5579,
+    brigade: 'חטיבה 179',
+    brigadeNumber: 179,
+    division: 'אוגדה 99 "הבזק"',
+    divisionNumber: 99,
+    command: "פיקוד מרכז",
+    type: "מילואים",
+  },
 
   // ===== חטיבת הזקן (8) - אוגדה 91 "הגליל" - פיקוד צפון - מילואים =====
   {
