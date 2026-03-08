@@ -84,7 +84,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col items-center px-4 py-8">
       {/* Header */}
-      <header className="text-center mb-8 w-full max-w-2xl">
+      <header className="text-center mb-6 w-full max-w-2xl">
         <div className="flex items-center justify-center gap-3 mb-2">
           <button
             onClick={() => setShowHelp(true)}
@@ -101,61 +101,89 @@ const Index = () => {
         </p>
       </header>
 
-      {/* Win state */}
-      {won && (
-        <div className="mb-6 p-4 bg-success/10 border border-success/30 rounded-lg text-center max-w-md animate-slide-down">
-          <Trophy className="w-8 h-8 text-accent mx-auto mb-2" />
-          <p className="text-success font-bold text-lg">מצאת!</p>
-          <p className="text-foreground text-sm mt-1">
-            {target.name} — {target.brigade}
-          </p>
-          <p className="text-muted-foreground text-xs mt-1">
-            ב-{guesses.length} ניחושים
-          </p>
-          <button
-            onClick={() => {
-              const randomIndex = Math.floor(Math.random() * battalions.length);
-              setTarget(battalions[randomIndex]);
-              setGuesses([]);
-              setWon(false);
-              setIsFreePlay(true);
-            }}
-            className="mt-3 inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
-          >
-            <RefreshCw className="w-4 h-4" />
-            שחק שוב
-          </button>
-        </div>
-      )}
-
-      {/* Input */}
-      <GuessInput
-        onGuess={handleGuess}
-        disabled={won}
-        guessedIds={guessedIds}
-      />
-
-      {/* Guess counter */}
-      {guesses.length > 0 && !won && (
-        <p className="text-muted-foreground text-sm mt-3">
-          ניחושים: {guesses.length}
-        </p>
-      )}
-
-      {/* Guess history */}
-      <GuessHistory guesses={guesses} />
-
-      {/* Legend */}
-      <div className="mt-8 flex gap-4 text-xs text-muted-foreground">
-        <div className="flex items-center gap-1.5">
-          <div className="w-3 h-3 rounded-sm bg-success" />
-          <span>התאמה</span>
-        </div>
-        <div className="flex items-center gap-1.5">
-          <div className="w-3 h-3 rounded-sm bg-miss" />
-          <span>לא תואם</span>
-        </div>
+      {/* Tab Switcher */}
+      <div className="flex gap-1 p-1 bg-muted rounded-lg mb-6 w-full max-w-xs">
+        <button
+          onClick={() => setActiveTab("game")}
+          className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 rounded-md text-sm font-medium transition-colors ${
+            activeTab === "game"
+              ? "bg-background text-foreground shadow-sm"
+              : "text-muted-foreground hover:text-foreground"
+          }`}
+        >
+          <Gamepad2 className="w-4 h-4" />
+          משחק
+        </button>
+        <button
+          onClick={() => setActiveTab("tree")}
+          className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 rounded-md text-sm font-medium transition-colors ${
+            activeTab === "tree"
+              ? "bg-background text-foreground shadow-sm"
+              : "text-muted-foreground hover:text-foreground"
+          }`}
+        >
+          <Network className="w-4 h-4" />
+          מבנה ארגוני
+        </button>
       </div>
+
+      {activeTab === "game" ? (
+        <>
+          {/* Win state */}
+          {won && (
+            <div className="mb-6 p-4 bg-success/10 border border-success/30 rounded-lg text-center max-w-md animate-slide-down">
+              <Trophy className="w-8 h-8 text-accent mx-auto mb-2" />
+              <p className="text-success font-bold text-lg">מצאת!</p>
+              <p className="text-foreground text-sm mt-1">
+                {target.name} — {target.brigade}
+              </p>
+              <p className="text-muted-foreground text-xs mt-1">
+                ב-{guesses.length} ניחושים
+              </p>
+              <button
+                onClick={() => {
+                  const randomIndex = Math.floor(Math.random() * battalions.length);
+                  setTarget(battalions[randomIndex]);
+                  setGuesses([]);
+                  setWon(false);
+                  setIsFreePlay(true);
+                }}
+                className="mt-3 inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+              >
+                <RefreshCw className="w-4 h-4" />
+                שחק שוב
+              </button>
+            </div>
+          )}
+
+          <GuessInput
+            onGuess={handleGuess}
+            disabled={won}
+            guessedIds={guessedIds}
+          />
+
+          {guesses.length > 0 && !won && (
+            <p className="text-muted-foreground text-sm mt-3">
+              ניחושים: {guesses.length}
+            </p>
+          )}
+
+          <GuessHistory guesses={guesses} />
+
+          <div className="mt-8 flex gap-4 text-xs text-muted-foreground">
+            <div className="flex items-center gap-1.5">
+              <div className="w-3 h-3 rounded-sm bg-success" />
+              <span>התאמה</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <div className="w-3 h-3 rounded-sm bg-miss" />
+              <span>לא תואם</span>
+            </div>
+          </div>
+        </>
+      ) : (
+        <OrgTree />
+      )}
 
       {/* Help modal */}
       {showHelp && (
