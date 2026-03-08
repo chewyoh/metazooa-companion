@@ -204,7 +204,7 @@ const Index = () => {
 
           <GuessInput
             onGuess={handleGuess}
-            disabled={won}
+            disabled={won || lost}
             guessedIds={guessedIds}
           />
 
