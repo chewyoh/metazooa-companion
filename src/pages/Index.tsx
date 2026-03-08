@@ -48,6 +48,7 @@ const Index = () => {
   });
   const [guesses, setGuesses] = useState<GuessResult[]>([]);
   const [won, setWon] = useState(false);
+  const [lost, setLost] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [isFreePlay, setIsFreePlay] = useState(false);
   const [activeTab, setActiveTab] = useState<"game" | "tree">("game");
