@@ -434,9 +434,9 @@ export const battalions: Battalion[] = [
     number: 195,
     brigade: 'חטיבת בני אור',
     brigadeNumber: 460,
-    division: 'אוגדה 162 "הפלדה"',
-    divisionNumber: 162,
-    command: "פיקוד דרום",
+    division: 'בית הספר לשריון',
+    divisionNumber: 460,
+    command: "פיקוד מרכז",
     type: "שריון",
   },
 
