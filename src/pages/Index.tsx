@@ -36,10 +36,11 @@ function saveState(state: GameState) {
 }
 
 const Index = () => {
-  const [target] = useState<Battalion>(getDailyBattalion);
+  const [target, setTarget] = useState<Battalion>(getDailyBattalion);
   const [guesses, setGuesses] = useState<GuessResult[]>([]);
   const [won, setWon] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
+  const [isFreePlay, setIsFreePlay] = useState(false);
 
   // Load saved state
   useEffect(() => {
