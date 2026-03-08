@@ -18,6 +18,7 @@ interface GameState {
   dateKey: string;
   guessIds: string[];
   won: boolean;
+  targetId?: string;
 }
 
 function loadState(): GameState | null {
@@ -37,7 +38,14 @@ function saveState(state: GameState) {
 }
 
 const Index = () => {
-  const [target, setTarget] = useState<Battalion>(getDailyBattalion);
+  const [target, setTarget] = useState<Battalion>(() => {
+    const saved = loadState();
+    if (saved?.targetId) {
+      const found = battalions.find((b) => b.id === saved.targetId);
+      if (found) return found;
+    }
+    return getDailyBattalion();
+  });
   const [guesses, setGuesses] = useState<GuessResult[]>([]);
   const [won, setWon] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
@@ -49,11 +57,17 @@ const Index = () => {
     if (isFreePlay) return;
     const saved = loadState();
     if (saved) {
+      const savedTarget = saved.targetId
+        ? battalions.find((b) => b.id === saved.targetId)
+        : null;
+      const currentTarget = savedTarget || target;
+      if (savedTarget) setTarget(savedTarget);
+
       const results: GuessResult[] = saved.guessIds
         .map((id: string) => {
           const b = battalions.find((bn) => bn.id === id);
           if (!b) return null;
-          return compareBattalions(b, target);
+          return compareBattalions(b, currentTarget);
         })
         .filter(Boolean) as GuessResult[];
       setGuesses(results);
@@ -75,6 +89,7 @@ const Index = () => {
         dateKey: getTodayKey(),
         guessIds: newGuesses.map((g) => g.battalion.id),
         won: isWon,
+        targetId: target.id,
       });
     }
   };
