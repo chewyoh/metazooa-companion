@@ -2602,7 +2602,6 @@ export function compareBattalions(
       command: guess.command === target.command,
       division: guess.division === target.division,
       brigade: guess.brigade === target.brigade,
-      type: guess.type === target.type,
     },
     isCorrect: guess.id === target.id,
   };
