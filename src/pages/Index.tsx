@@ -42,8 +42,9 @@ const Index = () => {
   const [showHelp, setShowHelp] = useState(false);
   const [isFreePlay, setIsFreePlay] = useState(false);
 
-  // Load saved state
+  // Load saved state only for daily mode
   useEffect(() => {
+    if (isFreePlay) return;
     const saved = loadState();
     if (saved) {
       const results: GuessResult[] = saved.guessIds
@@ -56,7 +57,8 @@ const Index = () => {
       setGuesses(results);
       setWon(saved.won);
     }
-  }, [target]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleGuess = (battalion: Battalion) => {
     const result = compareBattalions(battalion, target);
@@ -66,11 +68,13 @@ const Index = () => {
     const isWon = result.isCorrect;
     if (isWon) setWon(true);
 
-    saveState({
-      dateKey: getTodayKey(),
-      guessIds: newGuesses.map((g) => g.battalion.id),
-      won: isWon,
-    });
+    if (!isFreePlay) {
+      saveState({
+        dateKey: getTodayKey(),
+        guessIds: newGuesses.map((g) => g.battalion.id),
+        won: isWon,
+      });
+    }
   };
 
   const guessedIds = new Set(guesses.map((g) => g.battalion.id));
