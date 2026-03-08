@@ -93,7 +93,7 @@ const Index = () => {
             <HelpCircle className="w-5 h-5" />
           </button>
           <h1 className="text-4xl font-black text-primary text-glow tracking-tight">
-            🎖️ מטא-צה״ל
+            🎖️ צה"לל - IDFle
           </h1>
         </div>
         <p className="text-muted-foreground text-sm">
