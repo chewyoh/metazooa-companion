@@ -40,6 +40,45 @@ function saveState(state: GameState) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 }
 
+interface StreakData {
+  current: number;
+  max: number;
+  lastWinDate: string;
+}
+
+function loadStreak(): StreakData {
+  try {
+    const raw = localStorage.getItem(STREAK_KEY);
+    if (!raw) return { current: 0, max: 0, lastWinDate: "" };
+    return JSON.parse(raw) as StreakData;
+  } catch {
+    return { current: 0, max: 0, lastWinDate: "" };
+  }
+}
+
+function updateStreak(won: boolean): StreakData {
+  const streak = loadStreak();
+  const today = getTodayKey();
+
+  if (streak.lastWinDate === today) return streak; // already recorded today
+
+  if (won) {
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    const yesterdayKey = yesterday.toISOString().slice(0, 10);
+
+    const newCurrent = streak.lastWinDate === yesterdayKey ? streak.current + 1 : 1;
+    const newMax = Math.max(newCurrent, streak.max);
+    const updated: StreakData = { current: newCurrent, max: newMax, lastWinDate: today };
+    localStorage.setItem(STREAK_KEY, JSON.stringify(updated));
+    return updated;
+  } else {
+    const updated: StreakData = { current: 0, max: streak.max, lastWinDate: streak.lastWinDate };
+    localStorage.setItem(STREAK_KEY, JSON.stringify(updated));
+    return updated;
+  }
+}
+
 const Index = () => {
   const [target, setTarget] = useState<Battalion>(() => {
     const saved = loadState();
