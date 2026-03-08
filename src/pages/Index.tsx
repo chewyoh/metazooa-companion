@@ -10,7 +10,9 @@ import {
 import { GuessInput } from "@/components/GuessInput";
 import { GuessHistory } from "@/components/GuessHistory";
 import { OrgTree } from "@/components/OrgTree";
-import { Trophy, HelpCircle, X, RefreshCw, Gamepad2, Network } from "lucide-react";
+import { Trophy, HelpCircle, X, RefreshCw, Gamepad2, Network, Share2 } from "lucide-react";
+import { toast } from "sonner";
+import { classificationLevels } from "@/data/idfUnits";
 
 const STORAGE_KEY = "idf-game-state";
 
