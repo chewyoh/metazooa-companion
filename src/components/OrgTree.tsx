@@ -43,6 +43,7 @@ const brigadeWikiMap: Record<string, string> = {
   "חטיבת שומרון (442)": "https://he.wikipedia.org/wiki/חטמ%22ר_שומרון",
   "חטיבת קטיף (6643)": "https://he.wikipedia.org/wiki/חטיבת_קטיף",
   "חטיבת גפן (7643)": "https://he.wikipedia.org/wiki/חטיבת_גפן",
+  "חטיבת האש 215 (215)": "https://he.wikipedia.org/wiki/%D7%97%D7%98%D7%99%D7%91%D7%AA_%D7%94%D7%90%D7%A9_215",
   'חטיבה 55 "הצנחנים המילואימניקים" (55)': "https://he.wikipedia.org/wiki/חטיבה_55",
   'חטיבה 551 "חטיבת הגדולים" (551)': "https://he.wikipedia.org/wiki/חטיבה_551",
   'חטיבה 646 "שועלי מרום" (646)': "https://he.wikipedia.org/wiki/חטיבה_646",
