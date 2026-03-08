@@ -106,6 +106,19 @@ const Index = () => {
           <p className="text-muted-foreground text-xs mt-1">
             ב-{guesses.length} ניחושים
           </p>
+          <button
+            onClick={() => {
+              const randomIndex = Math.floor(Math.random() * battalions.length);
+              setTarget(battalions[randomIndex]);
+              setGuesses([]);
+              setWon(false);
+              setIsFreePlay(true);
+            }}
+            className="mt-3 inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+          >
+            <RefreshCw className="w-4 h-4" />
+            שחק שוב
+          </button>
         </div>
       )}
 
