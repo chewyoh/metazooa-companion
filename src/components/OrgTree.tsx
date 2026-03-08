@@ -129,20 +129,40 @@ function TreeNodeComponent({ node, depth = 0 }: { node: TreeNode; depth?: number
 
   return (
     <div className="mr-2">
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className={`flex items-center gap-2 py-2 px-3 rounded-lg text-sm font-semibold text-foreground hover:bg-muted/60 transition-colors w-full text-right ${bgClass} border-r-2 ${colorClass}`}
-      >
-        {expanded ? (
-          <ChevronDown className="w-4 h-4 shrink-0 text-muted-foreground" />
-        ) : (
-          <ChevronLeft className="w-4 h-4 shrink-0 text-muted-foreground" />
-        )}
-        <span>{node.label}</span>
-        <span className="text-xs text-muted-foreground mr-auto">
+      <div className={`flex items-center gap-2 py-2 px-3 rounded-lg text-sm font-semibold text-foreground ${bgClass} border-r-2 ${colorClass}`}>
+        <button
+          onClick={() => setExpanded(!expanded)}
+          className="flex items-center gap-2 hover:bg-muted/60 transition-colors rounded p-0.5"
+        >
+          {expanded ? (
+            <ChevronDown className="w-4 h-4 shrink-0 text-muted-foreground" />
+          ) : (
+            <ChevronLeft className="w-4 h-4 shrink-0 text-muted-foreground" />
+          )}
+        </button>
+        <button
+          onClick={() => setExpanded(!expanded)}
+          className="hover:bg-muted/60 transition-colors rounded px-1"
+        >
+          {node.label}
+        </button>
+        <span className="text-xs text-muted-foreground">
           ({node.children.length})
         </span>
-      </button>
+        {node.wikiUrl && (
+          <a
+            href={node.wikiUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-auto text-muted-foreground hover:text-primary transition-colors"
+            title="ויקיפדיה"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        )}
+        {!node.wikiUrl && <span className="mr-auto" />}
+      </div>
       {expanded && (
         <div className="mr-4 mt-1 space-y-1 border-r border-border pr-2">
           {node.children.map((child, i) => (
