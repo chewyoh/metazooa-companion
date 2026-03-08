@@ -501,16 +501,16 @@ export const battalions: Battalion[] = [
     command: "פיקוד צפון",
     type: "ארטילריה",
   },
-  // ===== חטיבת ארטילריה - אוגדה 210 =====
+  // ===== חטיבת האש 282 - אוגדה 36 "געש" - פיקוד צפון =====
   {
     id: "art-282-1",
-    name: 'גדוד תותחנים 282',
-    nameEn: '282nd Artillery Battalion',
+    name: 'חטיבת האש 282',
+    nameEn: '282nd Fire Brigade',
     number: 282,
-    brigade: 'ארטילריה אוגדה 210',
+    brigade: 'חטיבת האש 282',
     brigadeNumber: 282,
-    division: 'אוגדה 210 "בשן"',
-    divisionNumber: 210,
+    division: 'אוגדה 36 "געש"',
+    divisionNumber: 36,
     command: "פיקוד צפון",
     type: "ארטילריה",
   },
