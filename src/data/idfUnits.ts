@@ -286,13 +286,13 @@ export const battalions: Battalion[] = [
     type: "חי\"ר",
   },
 
-  // ===== חטיבת הקומנדו (89) - אוגדה 98 - פיקוד מרכז =====
+  // ===== חטיבת עוז (89) - אוגדה 98 - פיקוד מרכז =====
   {
     id: "oz-212",
     name: 'יחידה 212 "מגלן"',
     nameEn: 'Unit 212 "Maglan"',
     number: 212,
-    brigade: 'חטיבת הקומנדו',
+    brigade: 'חטיבת עוז',
     brigadeNumber: 89,
     division: 'אוגדה 98 "האש"',
     divisionNumber: 98,
@@ -304,7 +304,7 @@ export const battalions: Battalion[] = [
     name: 'יחידה 217 "דובדבן"',
     nameEn: 'Unit 217 "Duvdevan"',
     number: 217,
-    brigade: 'חטיבת הקומנדו',
+    brigade: 'חטיבת עוז',
     brigadeNumber: 89,
     division: 'אוגדה 98 "האש"',
     divisionNumber: 98,
@@ -316,7 +316,7 @@ export const battalions: Battalion[] = [
     name: 'יחידה 621 "אגוז"',
     nameEn: 'Unit 621 "Egoz"',
     number: 621,
-    brigade: 'חטיבת הקומנדו',
+    brigade: 'חטיבת עוז',
     brigadeNumber: 89,
     division: 'אוגדה 98 "האש"',
     divisionNumber: 98,
