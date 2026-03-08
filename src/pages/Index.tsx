@@ -11,6 +11,7 @@ import { GuessInput } from "@/components/GuessInput";
 import { GuessHistory } from "@/components/GuessHistory";
 import { OrgTree } from "@/components/OrgTree";
 import { Trophy, HelpCircle, X, RefreshCw, Gamepad2, Network, Share2, Flame } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { toast } from "sonner";
 import { classificationLevels } from "@/data/idfUnits";
 
@@ -372,6 +373,8 @@ const Index = () => {
           </div>
         </div>
       )}
+      {/* Theme toggle */}
+      <ThemeToggle />
     </div>
   );
 };
