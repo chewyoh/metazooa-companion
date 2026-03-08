@@ -437,6 +437,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד דרום",
     type: "שריון",
   },
+  {
+    id: "401-601",
+    name: 'גדוד 601',
+    nameEn: '601st Armored Battalion',
+    number: 601,
+    brigade: 'חטיבת עקבות הברזל',
+    brigadeNumber: 401,
+    division: 'אוגדה 162 "הפלדה"',
+    divisionNumber: 162,
+    command: "פיקוד דרום",
+    type: "שריון",
+  },
 
   // ===== חטיבה 460 "בני אור" - בית הספר לשריון =====
   {
