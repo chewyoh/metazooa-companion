@@ -68,11 +68,13 @@ const Index = () => {
     const isWon = result.isCorrect;
     if (isWon) setWon(true);
 
-    saveState({
-      dateKey: getTodayKey(),
-      guessIds: newGuesses.map((g) => g.battalion.id),
-      won: isWon,
-    });
+    if (!isFreePlay) {
+      saveState({
+        dateKey: getTodayKey(),
+        guessIds: newGuesses.map((g) => g.battalion.id),
+        won: isWon,
+      });
+    }
   };
 
   const guessedIds = new Set(guesses.map((g) => g.battalion.id));
