@@ -1954,31 +1954,6 @@ export const battalions: Battalion[] = [
     type: "מילואים",
   },
 
-  // ===== חטיבה 205 "עקבות הברזל מילואים" - אוגדה 162 - מילואים =====
-  {
-    id: "res-205-1",
-    name: 'גדוד 8111',
-    nameEn: '8111th Reserve Armored Battalion',
-    number: 8111,
-    brigade: 'חטיבה 205',
-    brigadeNumber: 205,
-    division: 'אוגדה 162 "הפלדה"',
-    divisionNumber: 162,
-    command: "פיקוד דרום",
-    type: "מילואים",
-  },
-  {
-    id: "res-205-2",
-    name: 'גדוד 8112',
-    nameEn: '8112th Reserve Armored Battalion',
-    number: 8112,
-    brigade: 'חטיבה 205',
-    brigadeNumber: 205,
-    division: 'אוגדה 162 "הפלדה"',
-    divisionNumber: 162,
-    command: "פיקוד דרום",
-    type: "מילואים",
-  },
 
   // ===== חטיבת אלון (228) - אוגדה 146 "המפץ" - פיקוד צפון - מילואים =====
   {

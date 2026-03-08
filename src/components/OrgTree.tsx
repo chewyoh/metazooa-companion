@@ -65,7 +65,7 @@ const brigadeWikiMap: Record<string, string> = {
   "חטיבת יפתח (11)": "https://he.wikipedia.org/wiki/חטיבת_יפתח_(מילואים)",
   "חטיבה 179 (179)": "https://he.wikipedia.org/wiki/חטיבה_179",
   "חטיבת הזקן (8)": "https://he.wikipedia.org/wiki/חטיבה_8",
-  "חטיבה 205 (205)": "https://he.wikipedia.org/wiki/חטיבה_205",
+  
   "חטיבת אלון (228)": "https://he.wikipedia.org/wiki/חטיבת_אלון",
   "חטיבה 5 (5)": "https://he.wikipedia.org/wiki/חטיבה_5",
   "חטיבה 16 (16)": "https://he.wikipedia.org/wiki/חטיבה_16",
