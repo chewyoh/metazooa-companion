@@ -85,6 +85,21 @@ const brigadeWikiMap: Record<string, string> = {
   "עוצבת התקומה (5200)": "https://he.wikipedia.org/wiki/עוצבת_התקומה",
 };
 
+const divisionWikiMap: Record<string, string> = {
+  'אוגדה 36 "געש" (36)': "https://he.wikipedia.org/wiki/אוגדה_36",
+  'אוגדה 98 "האש" (98)': "https://he.wikipedia.org/wiki/אוגדה_98",
+  'אוגדה 162 "הפלדה" (162)': "https://he.wikipedia.org/wiki/אוגדה_162",
+  'אוגדה 99 "הבזק" (99)': "https://he.wikipedia.org/wiki/אוגדה_99",
+  'אוגדה 38 "ההכשרות" (38)': "https://he.wikipedia.org/wiki/אוגדת_ההכשרות",
+  'אוגדה 91 "הגליל" (91)': "https://he.wikipedia.org/wiki/אוגדה_91",
+  'אוגדה 210 "בשן" (210)': "https://he.wikipedia.org/wiki/אוגדה_210",
+  'אוגדה 80 "אדום" (80)': "https://he.wikipedia.org/wiki/אוגדה_80",
+  'אוגדה 877 "יהודה ושומרון" (877)': "https://he.wikipedia.org/wiki/אוגדה_877",
+  'אוגדה 143 "פיירפוקס" (143)': "https://he.wikipedia.org/wiki/אוגדה_143",
+  'אוגדה 146 "המפץ" (146)': "https://he.wikipedia.org/wiki/אוגדה_146",
+  'אוגדה 96 "גלעד" (96)': "https://he.wikipedia.org/wiki/אוגדה_96",
+};
+
 function buildTree(): TreeNode[] {
   const commandMap = new Map<string, Map<string, Map<string, string[]>>>();
 
