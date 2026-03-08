@@ -161,6 +161,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד דרום",
     type: "חי\"ר",
   },
+  {
+    id: "givati-607",
+    name: 'גדוד 607',
+    nameEn: '607th Battalion',
+    number: 607,
+    brigade: 'חטיבת גבעתי',
+    brigadeNumber: 84,
+    division: 'אוגדה 162 "הפלדה"',
+    divisionNumber: 162,
+    command: "פיקוד דרום",
+    type: "חי\"ר",
+  },
 
   // ===== חטיבת נח"ל (933) - אוגדה 162 - פיקוד דרום =====
   {
