@@ -10,7 +10,9 @@ import {
 import { GuessInput } from "@/components/GuessInput";
 import { GuessHistory } from "@/components/GuessHistory";
 import { OrgTree } from "@/components/OrgTree";
-import { Trophy, HelpCircle, X, RefreshCw, Gamepad2, Network } from "lucide-react";
+import { Trophy, HelpCircle, X, RefreshCw, Gamepad2, Network, Share2 } from "lucide-react";
+import { toast } from "sonner";
+import { classificationLevels } from "@/data/idfUnits";
 
 const STORAGE_KEY = "idf-game-state";
 
@@ -99,6 +101,26 @@ const Index = () => {
 
   const guessedIds = new Set(guesses.map((g) => g.battalion.id));
 
+  const handleShare = () => {
+    const reversedGuesses = [...guesses].reverse();
+    const grid = reversedGuesses
+      .map((g) =>
+        classificationLevels
+          .map((level) => (g.matches[level.key] ? "🟩" : "🟥"))
+          .join("")
+      )
+      .join("\n");
+
+    const status = won ? `✅ ב-${guesses.length}/10 ניחושים` : "❌ לא הצלחתי";
+    const text = `🎖️ צה"לל - IDFle\n${status}\n\n${grid}\n\nhttps://idfle.lovable.app`;
+
+    navigator.clipboard.writeText(text).then(() => {
+      toast.success("התוצאה הועתקה! שתף עם חברים 🎖️");
+    }).catch(() => {
+      toast.error("לא הצלחנו להעתיק");
+    });
+  };
+
   return (
     <div className="min-h-screen bg-background flex flex-col items-center px-4 py-8">
       {/* Header */}
@@ -172,6 +194,13 @@ const Index = () => {
                 <RefreshCw className="w-4 h-4" />
                 שחק שוב
               </button>
+              <button
+                onClick={handleShare}
+                className="mt-3 mr-2 inline-flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors text-sm font-medium"
+              >
+                <Share2 className="w-4 h-4" />
+                שתף תוצאה
+              </button>
             </div>
           )}
 
@@ -198,6 +227,13 @@ const Index = () => {
               >
                 <RefreshCw className="w-4 h-4" />
                 שחק שוב
+              </button>
+              <button
+                onClick={handleShare}
+                className="mt-3 mr-2 inline-flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors text-sm font-medium"
+              >
+                <Share2 className="w-4 h-4" />
+                שתף תוצאה
               </button>
             </div>
           )}
