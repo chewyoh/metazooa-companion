@@ -563,16 +563,17 @@ export const battalions: Battalion[] = [
     command: "פיקוד מרכז",
     type: "ארטילריה",
   },
+  // גדוד 334 שייך לחטיבת האש 215 - אוגדה 162
   {
-    id: "art-215-1",
+    id: "art-215-334",
     name: 'גדוד תותחנים 334',
     nameEn: '334th Artillery Battalion',
     number: 334,
-    brigade: 'חטיבת עמוד האש',
+    brigade: 'חטיבת האש 215',
     brigadeNumber: 215,
-    division: 'אוגדה 36 "געש"',
-    divisionNumber: 36,
-    command: "פיקוד צפון",
+    division: 'אוגדה 162 "הפלדה"',
+    divisionNumber: 162,
+    command: "פיקוד דרום",
     type: "ארטילריה",
   },
   // ===== חטיבת האש 282 - אוגדה 36 "געש" - פיקוד צפון =====
