@@ -23,7 +23,7 @@ const brigadeWikiMap: Record<string, string> = {
   "חטיבת האש 282 (282)": "https://he.wikipedia.org/wiki/חטיבת_האש_282",
   "חטיבת בסלמ\"ח (828)": "https://he.wikipedia.org/wiki/בית_הספר_לשריון",
   "חטיבת הבקעה (417)": "https://he.wikipedia.org/wiki/חטיבת_הבקעה",
-  "חטיבת אורי (5096)": "https://he.wikipedia.org/wiki/חטיבת_אורי",
+  "חטיבת אורי (182)": "https://he.wikipedia.org/wiki/חטיבת_אורי",
   "חטיבת תל-חי (5097)": "https://he.wikipedia.org/wiki/חטיבת_תל-חי",
   "חטיבת יזרעאלי (5098)": "https://he.wikipedia.org/wiki/חטיבת_יזרעאלי",
   "חטיבת יהונתן (5099)": "https://he.wikipedia.org/wiki/חטיבת_יהונתן",
