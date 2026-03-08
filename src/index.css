@@ -62,9 +62,23 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
     font-family: 'Heebo', sans-serif;
     direction: rtl;
+    background-color: hsl(var(--background));
+    background-image:
+      radial-gradient(ellipse 80px 60px at 20% 15%, hsla(100, 30%, 18%, 0.8) 0%, transparent 70%),
+      radial-gradient(ellipse 120px 80px at 75% 25%, hsla(120, 25%, 14%, 0.7) 0%, transparent 70%),
+      radial-gradient(ellipse 90px 70px at 45% 60%, hsla(80, 35%, 20%, 0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 110px 90px at 10% 80%, hsla(130, 20%, 12%, 0.7) 0%, transparent 70%),
+      radial-gradient(ellipse 70px 100px at 85% 70%, hsla(90, 30%, 16%, 0.8) 0%, transparent 70%),
+      radial-gradient(ellipse 100px 60px at 55% 90%, hsla(110, 25%, 22%, 0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 60px 80px at 30% 40%, hsla(70, 20%, 15%, 0.7) 0%, transparent 70%),
+      radial-gradient(ellipse 130px 70px at 65% 45%, hsla(140, 20%, 10%, 0.5) 0%, transparent 70%),
+      radial-gradient(ellipse 80px 110px at 90% 10%, hsla(95, 25%, 17%, 0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 100px 80px at 5% 50%, hsla(105, 30%, 13%, 0.7) 0%, transparent 70%);
+    background-size: 400px 400px;
+    background-repeat: repeat;
   }
 }
 
