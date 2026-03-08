@@ -256,7 +256,7 @@ const Index = () => {
                 🎯 <strong>המטרה:</strong> לנחש את הגדוד היומי של צה״ל.
               </p>
               <p>
-                📝 <strong>בכל ניחוש</strong> תראו את מידת הקרבה ב-4 רמות:
+                📝 <strong>בכל ניחוש</strong> תראו את מידת הקרבה ב-3 רמות:
               </p>
               <ul className="space-y-1 mr-4">
                 <li>
@@ -267,9 +267,6 @@ const Index = () => {
                 </li>
                 <li>
                   <strong>חטיבה</strong> — גולני, צנחנים, גבעתי...
-                </li>
-                <li>
-                  <strong>סוג</strong> — חי״ר, שריון, צנחנים, קומנדו
                 </li>
               </ul>
               <p>
