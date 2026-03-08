@@ -1113,6 +1113,160 @@ export const battalions: Battalion[] = [
     command: "פיקוד צפון",
     type: "מילואים",
   },
+
+  // ===== חטיבת כרמלי - אוגדה 146 "המפץ" - פיקוד צפון =====
+  {
+    id: "carmeli-1",
+    name: 'גדוד כרמלי',
+    nameEn: 'Carmeli Battalion',
+    number: 5146,
+    brigade: 'חטיבת כרמלי',
+    brigadeNumber: 2,
+    division: 'אוגדה 146 "המפץ"',
+    divisionNumber: 146,
+    command: "פיקוד צפון",
+    type: "חי\"ר",
+  },
+
+  // ===== עוצבת הנשר (226) - אוגדה 146 "המפץ" - פיקוד צפון - מילואים =====
+  {
+    id: "nesher-226-1",
+    name: 'גדוד 226',
+    nameEn: '226th Reserve Battalion',
+    number: 226,
+    brigade: 'עוצבת הנשר',
+    brigadeNumber: 226,
+    division: 'אוגדה 146 "המפץ"',
+    divisionNumber: 146,
+    command: "פיקוד צפון",
+    type: "מילואים",
+  },
+
+  // ===== חטיבת קרייתי (4) - אוגדה 146 "המפץ" - פיקוד צפון - מילואים =====
+  {
+    id: "kiryati-4-1",
+    name: 'גדוד קרייתי',
+    nameEn: 'Kiryati Battalion',
+    number: 5004,
+    brigade: 'חטיבת קרייתי',
+    brigadeNumber: 4,
+    division: 'אוגדה 146 "המפץ"',
+    divisionNumber: 146,
+    command: "פיקוד צפון",
+    type: "מילואים",
+  },
+
+  // ===== חטיבת אגרוף הברזל (200) - אוגדה 146 "המפץ" - פיקוד צפון - מילואים =====
+  {
+    id: "iron-fist-200-1",
+    name: 'גדוד אגרוף הברזל',
+    nameEn: 'Iron Fist Battalion',
+    number: 514,
+    brigade: 'חטיבת אגרוף הברזל',
+    brigadeNumber: 200,
+    division: 'אוגדה 146 "המפץ"',
+    divisionNumber: 146,
+    command: "פיקוד צפון",
+    type: "מילואים",
+  },
+
+  // ===== עוצבת התקומה - אוגדה 146 "המפץ" - פיקוד צפון - מילואים =====
+  {
+    id: "hatkuma-1",
+    name: 'גדוד התקומה',
+    nameEn: 'Hatkuma Battalion',
+    number: 5200,
+    brigade: 'עוצבת התקומה',
+    brigadeNumber: 5200,
+    division: 'אוגדה 146 "המפץ"',
+    divisionNumber: 146,
+    command: "פיקוד צפון",
+    type: "מילואים",
+  },
+
+  // ===== חטיבת עציוני (6) - אוגדה 36 "געש" - פיקוד צפון - מילואים =====
+  {
+    id: "etzioni-6-1",
+    name: 'גדוד עציוני',
+    nameEn: 'Etzioni Battalion',
+    number: 5006,
+    brigade: 'חטיבת עציוני',
+    brigadeNumber: 6,
+    division: 'אוגדה 36 "געש"',
+    divisionNumber: 36,
+    command: "פיקוד צפון",
+    type: "מילואים",
+  },
+
+  // ===== עוצבת אדירים - אוגדה 91 "הגליל" - פיקוד צפון - מילואים =====
+  {
+    id: "adirim-1",
+    name: 'גדוד אדירים',
+    nameEn: 'Adirim Battalion',
+    number: 5091,
+    brigade: 'עוצבת אדירים',
+    brigadeNumber: 5091,
+    division: 'אוגדה 91 "הגליל"',
+    divisionNumber: 91,
+    command: "פיקוד צפון",
+    type: "מילואים",
+  },
+
+  // ===== חטיבה 434 "יפתח" - אוגדה 210 "בשן" - פיקוד צפון - מילואים =====
+  {
+    id: "yiftach-434-1",
+    name: 'גדוד יפתח 434',
+    nameEn: 'Yiftach 434 Battalion',
+    number: 434,
+    brigade: 'עוצבת יפתח',
+    brigadeNumber: 434,
+    division: 'אוגדה 210 "בשן"',
+    divisionNumber: 210,
+    command: "פיקוד צפון",
+    type: "מילואים",
+  },
+
+  // ===== עוצבת כידון (209) - אוגדה 210 "בשן" - פיקוד צפון - מילואים =====
+  {
+    id: "kidon-209-1",
+    name: 'גדוד כידון 209',
+    nameEn: 'Kidon 209 Battalion',
+    number: 209,
+    brigade: 'עוצבת כידון',
+    brigadeNumber: 209,
+    division: 'אוגדה 210 "בשן"',
+    divisionNumber: 210,
+    command: "פיקוד צפון",
+    type: "ארטילריה",
+  },
+
+  // ===== חטיבת עודד - אוגדה 210 "בשן" - פיקוד צפון - מילואים =====
+  {
+    id: "oded-1",
+    name: 'גדוד עודד',
+    nameEn: 'Oded Battalion',
+    number: 5210,
+    brigade: 'חטיבת עודד',
+    brigadeNumber: 5210,
+    division: 'אוגדה 210 "בשן"',
+    divisionNumber: 210,
+    command: "פיקוד צפון",
+    type: "מילואים",
+  },
+
+  // ===== חטיבת אלכסנדרוני - אוגדה 91 "הגליל" - פיקוד צפון - מילואים =====
+  {
+    id: "alexandroni-1",
+    name: 'גדוד אלכסנדרוני',
+    nameEn: 'Alexandroni Battalion',
+    number: 5300,
+    brigade: 'חטיבת אלכסנדרוני',
+    brigadeNumber: 5300,
+    division: 'אוגדה 91 "הגליל"',
+    divisionNumber: 91,
+    command: "פיקוד צפון",
+    type: "מילואים",
+  },
 ];
 
 // Classification levels for comparison
