@@ -101,6 +101,26 @@ const Index = () => {
 
   const guessedIds = new Set(guesses.map((g) => g.battalion.id));
 
+  const handleShare = () => {
+    const reversedGuesses = [...guesses].reverse();
+    const grid = reversedGuesses
+      .map((g) =>
+        classificationLevels
+          .map((level) => (g.matches[level.key] ? "🟩" : "🟥"))
+          .join("")
+      )
+      .join("\n");
+
+    const status = won ? `✅ ב-${guesses.length}/10 ניחושים` : "❌ לא הצלחתי";
+    const text = `🎖️ צה"לל - IDFle\n${status}\n\n${grid}\n\nhttps://idfle.lovable.app`;
+
+    navigator.clipboard.writeText(text).then(() => {
+      toast.success("התוצאה הועתקה! שתף עם חברים 🎖️");
+    }).catch(() => {
+      toast.error("לא הצלחנו להעתיק");
+    });
+  };
+
   return (
     <div className="min-h-screen bg-background flex flex-col items-center px-4 py-8">
       {/* Header */}
