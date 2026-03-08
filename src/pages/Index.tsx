@@ -85,6 +85,7 @@ const Index = () => {
 
     const isWon = result.isCorrect;
     if (isWon) setWon(true);
+    else if (newGuesses.length >= 10) setLost(true);
 
     if (!isFreePlay) {
       saveState({
