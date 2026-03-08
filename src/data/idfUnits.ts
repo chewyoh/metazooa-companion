@@ -411,8 +411,31 @@ export const battalions: Battalion[] = [
     command: "פיקוד צפון",
     type: "שריון",
   },
+  {
+    id: "188-605",
+    name: 'גדוד 605',
+    nameEn: 'Battalion 605',
+    number: 605,
+    brigade: 'חטיבת ברק',
+    brigadeNumber: 188,
+    division: 'אוגדה 36 "געש"',
+    divisionNumber: 36,
+    command: "פיקוד צפון",
+    type: "שריון",
+  },
+  {
+    id: "188-275",
+    name: 'יחס"ם 275',
+    nameEn: 'Support Unit 275',
+    number: 275,
+    brigade: 'חטיבת ברק',
+    brigadeNumber: 188,
+    division: 'אוגדה 36 "געש"',
+    divisionNumber: 36,
+    command: "פיקוד צפון",
+    type: "שריון",
+  },
 
-  // ===== חטיבה 401 "עקבות הברזל" - אוגדה 162 - פיקוד דרום =====
   {
     id: "401-46",
     name: 'גדוד 46',
