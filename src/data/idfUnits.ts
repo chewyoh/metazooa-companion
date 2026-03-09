@@ -1651,7 +1651,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 91 "הגליל"',
     divisionNumber: 91,
     command: "פיקוד צפון",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
   // ===== חטיבת הגולן (474) - אוגדה 210 "בשן" - פיקוד צפון =====
   {
