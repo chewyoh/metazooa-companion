@@ -2361,7 +2361,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 162 "הפלדה"',
     divisionNumber: 162,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "סיור",
   },
   {
     id: "res-5-5505",
