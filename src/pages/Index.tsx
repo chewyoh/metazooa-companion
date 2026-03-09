@@ -117,7 +117,7 @@ const Index = () => {
         .filter(Boolean) as GuessResult[];
       setGuesses(results);
       setWon(saved.won);
-      if (!saved.won && results.length >= 10) setLost(true);
+      if (!saved.won && results.length >= 15) setLost(true);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -128,7 +128,7 @@ const Index = () => {
     setGuesses(newGuesses);
 
     const isWon = result.isCorrect;
-    const isLost = !isWon && newGuesses.length >= 10;
+    const isLost = !isWon && newGuesses.length >= 15;
     if (isWon) {
       setWon(true);
       if (!isFreePlay) setStreak(updateStreak(true));
@@ -159,7 +159,7 @@ const Index = () => {
       )
       .join("\n");
 
-    const status = won ? `✅ ב-${guesses.length}/10 ניחושים` : "❌ לא הצלחתי";
+    const status = won ? `✅ ב-${guesses.length}/15 ניחושים` : "❌ לא הצלחתי";
     const streakText = streak.current > 0 ? `\n🔥 סטריק: ${streak.current}` : "";
     const text = `🎖️ צה"לל - IDFle\n${status}${streakText}\n\n${grid}\n\nhttps://idfle.lovable.app`;
 
@@ -301,7 +301,7 @@ const Index = () => {
 
           {guesses.length > 0 && !won && !lost && (
             <p className="text-muted-foreground text-sm mt-3">
-              ניחושים: {guesses.length}/10
+              ניחושים: {guesses.length}/15
             </p>
           )}
 
