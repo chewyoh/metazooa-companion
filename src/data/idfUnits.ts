@@ -120,7 +120,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 98 "האש"',
     divisionNumber: 98,
     command: "פיקוד מרכז",
-    type: "צנחנים",
+    type: "סיור",
   },
 
   // ===== חטיבת גבעתי (84) - אוגדה 162 - פיקוד דרום =====
