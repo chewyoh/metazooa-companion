@@ -1087,7 +1087,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
   {
     id: "uri-1821",
@@ -1099,7 +1099,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
   {
     id: "uri-1822",
@@ -1111,7 +1111,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
   {
     id: "uri-1823",
@@ -1123,7 +1123,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
   {
     id: "uri-1824",
@@ -1135,7 +1135,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "טריטוריאלי",
+    type: "סיור",
   },
   {
     id: "uri-1825",
@@ -1147,7 +1147,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
   // ===== חטיבת תל-חי (185) - אוגדה 96 "גלעד" - פיקוד מרכז =====
   {
