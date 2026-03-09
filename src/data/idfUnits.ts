@@ -1714,7 +1714,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 80 "אדום"',
     divisionNumber: 80,
     command: "פיקוד דרום",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
 
   // ===== חטיבת יואב (406) - אוגדה 80 "אדום" - פיקוד דרום =====
