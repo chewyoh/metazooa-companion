@@ -2998,7 +2998,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 210 "בשן"',
     divisionNumber: 210,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "סיור",
   },
 
   // ===== חטיבת אלכסנדרוני (3) - אוגדה 91 "הגליל" - פיקוד צפון - מילואים =====
