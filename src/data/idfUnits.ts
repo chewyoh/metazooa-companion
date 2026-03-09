@@ -2512,7 +2512,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "חי\"ר",
+    type: "סיור",
   },
 
   // ===== עוצבת הנשר (226) - אוגדה 146 "המפץ" - פיקוד צפון - מילואים =====
