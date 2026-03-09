@@ -2186,7 +2186,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 99 "הבזק"',
     divisionNumber: 99,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "לוגיסטיקה",
   },
 
   // ===== חטיבת הזקן (8) - אוגדה 91 "הגליל" - פיקוד צפון - מילואים =====
