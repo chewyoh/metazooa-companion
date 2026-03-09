@@ -1702,7 +1702,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 80 "אדום"',
     divisionNumber: 80,
     command: "פיקוד דרום",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
   {
     id: "paran-277",
