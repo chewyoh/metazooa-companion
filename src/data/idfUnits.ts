@@ -2910,7 +2910,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 210 "בשן"',
     divisionNumber: 210,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "הנדסה קרבית",
   },
 
   // ===== עוצבת כידון (209) - אוגדה 210 "בשן" - פיקוד צפון - מילואים =====
