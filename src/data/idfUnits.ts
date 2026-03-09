@@ -1688,7 +1688,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 210 "בשן"',
     divisionNumber: 210,
     command: "פיקוד צפון",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
 
   // ===== חטיבת פארן (512) - אוגדה 80 "אדום" - פיקוד דרום =====
