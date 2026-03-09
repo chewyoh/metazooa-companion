@@ -1408,7 +1408,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 877 "יהודה ושומרון"',
     divisionNumber: 877,
     command: "פיקוד מרכז",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
   {
     id: "terr-274-910",
@@ -1420,7 +1420,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 877 "יהודה ושומרון"',
     divisionNumber: 877,
     command: "פיקוד מרכז",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
   {
     id: "terr-274-8132",
@@ -1432,7 +1432,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 877 "יהודה ושומרון"',
     divisionNumber: 877,
     command: "פיקוד מרכז",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
   {
     id: "terr-578-49",
@@ -1444,7 +1444,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 877 "יהודה ושומרון"',
     divisionNumber: 877,
     command: "פיקוד מרכז",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
   {
     id: "terr-578-9221",
