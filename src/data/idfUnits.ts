@@ -1456,7 +1456,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 877 "יהודה ושומרון"',
     divisionNumber: 877,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "סיור",
   },
   {
     id: "terr-578-9213",
