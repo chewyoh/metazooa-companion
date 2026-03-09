@@ -3072,7 +3072,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 91 "הגליל"',
     divisionNumber: 91,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "לוגיסטיקה",
   },
 
   // ===== חטיבת הנגב (12) - אוגדה 252 "סיני" - פיקוד דרום =====
