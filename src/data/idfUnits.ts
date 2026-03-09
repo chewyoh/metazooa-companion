@@ -1015,7 +1015,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
   {
     id: "417-47",
@@ -1027,7 +1027,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "טריטוריאלי",
+    type: "מרחבי",
   },
   {
     id: "417-5016",
