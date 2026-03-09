@@ -159,7 +159,7 @@ const Index = () => {
       )
       .join("\n");
 
-    const status = won ? `✅ ב-${guesses.length}/10 ניחושים` : "❌ לא הצלחתי";
+    const status = won ? `✅ ב-${guesses.length}/15 ניחושים` : "❌ לא הצלחתי";
     const streakText = streak.current > 0 ? `\n🔥 סטריק: ${streak.current}` : "";
     const text = `🎖️ צה"לל - IDFle\n${status}${streakText}\n\n${grid}\n\nhttps://idfle.lovable.app`;
 
