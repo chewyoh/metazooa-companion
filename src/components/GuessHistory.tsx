@@ -51,6 +51,8 @@ export function GuessHistory({ guesses }: GuessHistoryProps) {
                     ? guess.battalion.command
                     : level.key === "division"
                     ? guess.battalion.division
+                    : level.key === "type"
+                    ? guess.battalion.type
                     : guess.battalion.brigade;
 
                 return (

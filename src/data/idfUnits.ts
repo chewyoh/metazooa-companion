@@ -3210,7 +3210,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 252 "סיני"',
     divisionNumber: 252,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "סיור",
   },
 
   // ===== חטיבת הראל (10) - אוגדה 252 "סיני" - פיקוד דרום =====
