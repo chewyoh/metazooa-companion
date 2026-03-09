@@ -2822,7 +2822,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 36 "געש"',
     divisionNumber: 36,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "לוגיסטיקה",
   },
 
   // ===== עוצבת אדירים (7338) - אוגדה 91 "הגליל" - פיקוד צפון - מילואים =====
