@@ -301,7 +301,7 @@ const Index = () => {
 
           {guesses.length > 0 && !won && !lost && (
             <p className="text-muted-foreground text-sm mt-3">
-              ניחושים: {guesses.length}/10
+              ניחושים: {guesses.length}/15
             </p>
           )}
 
