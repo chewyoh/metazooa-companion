@@ -128,7 +128,7 @@ const Index = () => {
     setGuesses(newGuesses);
 
     const isWon = result.isCorrect;
-    const isLost = !isWon && newGuesses.length >= 10;
+    const isLost = !isWon && newGuesses.length >= 15;
     if (isWon) {
       setWon(true);
       if (!isFreePlay) setStreak(updateStreak(true));
