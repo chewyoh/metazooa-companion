@@ -232,7 +232,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 162 "הפלדה"',
     divisionNumber: 162,
     command: "פיקוד דרום",
-    type: "חי\"ר",
+    type: "סיור",
   },
 
   // ===== חטיבת כפיר (900) - אוגדה 99 - פיקוד מרכז =====
