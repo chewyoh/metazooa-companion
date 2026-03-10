@@ -937,7 +937,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 38 "ההכשרות"',
     divisionNumber: 38,
     command: "זרוע היבשה",
-    type: "הכשרה",
+    type: "הנדסה קרבית",
   },
   {
     id: "bahalatz-615",
