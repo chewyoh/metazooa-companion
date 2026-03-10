@@ -382,7 +382,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 36 "געש"',
     divisionNumber: 36,
     command: "פיקוד צפון",
-    type: "שריון",
+    type: "הנדסה קרבית",
   },
   {
     id: "7-gdsam7",
