@@ -863,6 +863,18 @@ export const battalions: Battalion[] = [
     command: "זרוע היבשה",
     type: "חי\"ר",
   },
+  {
+    id: "bislamach-749",
+    name: 'גדוד הנדסה 749',
+    nameEn: 'Engineering Battalion 749',
+    number: 749,
+    brigade: 'חטיבת בסלמ"ח',
+    brigadeNumber: 828,
+    division: 'אוגדה 38 "ההכשרות"',
+    divisionNumber: 38,
+    command: "זרוע היבשה",
+    type: "הנדסה קרבית",
+  },
 
   // ===== בה"ד 1 - בית הספר לקצינים - אוגדה 38 "ההכשרות" =====
   {
