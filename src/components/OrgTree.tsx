@@ -7,6 +7,7 @@ interface TreeNode {
   children: TreeNode[];
   wikiUrl?: string;
   battalionId?: string;
+  unitType?: string;
 }
 
 // Mapping brigade keys "name (number)" to Hebrew Wikipedia articles
