@@ -3360,6 +3360,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד דרום",
     type: "שריון",
   },
+  {
+    id: "hamachatz-14-271",
+    name: 'גדוד 271 "פלסי סיני"',
+    nameEn: 'Battalion 271 "Palsei Sinai"',
+    number: 271,
+    brigade: 'חטיבת המחץ',
+    brigadeNumber: 14,
+    division: 'אוגדה 252 "סיני"',
+    divisionNumber: 252,
+    command: "פיקוד דרום",
+    type: "הנדסה קרבית",
+  },
 
   // ===== עוצבת התבור (454) - אוגדה 252 "סיני" - פיקוד דרום =====
   {
