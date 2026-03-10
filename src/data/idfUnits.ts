@@ -182,7 +182,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 162 "הפלדה"',
     divisionNumber: 162,
     command: "פיקוד דרום",
-    type: "חי\"ר",
+    type: "הנדסה קרבית",
   },
 
   // ===== חטיבת נח"ל (933) - אוגדה 162 - פיקוד דרום =====
@@ -382,7 +382,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 36 "געש"',
     divisionNumber: 36,
     command: "פיקוד צפון",
-    type: "שריון",
+    type: "הנדסה קרבית",
   },
   {
     id: "7-gdsam7",
@@ -443,7 +443,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 36 "געש"',
     divisionNumber: 36,
     command: "פיקוד צפון",
-    type: "שריון",
+    type: "הנדסה קרבית",
   },
   {
     id: "188-275",
@@ -504,7 +504,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 162 "הפלדה"',
     divisionNumber: 162,
     command: "פיקוד דרום",
-    type: "שריון",
+    type: "הנדסה קרבית",
   },
 
   // ===== חטיבת האש 215 - אוגדה 162 "הפלדה" - פיקוד דרום =====
@@ -937,7 +937,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 38 "ההכשרות"',
     divisionNumber: 38,
     command: "זרוע היבשה",
-    type: "הכשרה",
+    type: "הנדסה קרבית",
   },
   {
     id: "bahalatz-615",
