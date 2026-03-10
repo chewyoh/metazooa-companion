@@ -249,7 +249,7 @@ export function OrgTree({ onBattalionClick }: { onBattalionClick?: (battalion: B
 
   return (
     <div className="w-full max-w-2xl mx-auto space-y-2">
-      <div className="flex gap-4 text-xs text-muted-foreground mb-4 flex-wrap">
+      <div className="flex gap-4 text-xs text-muted-foreground mb-2 flex-wrap">
         <div className="flex items-center gap-1.5">
           <div className="w-3 h-0.5 bg-primary" />
           <span>פיקוד</span>
@@ -266,6 +266,15 @@ export function OrgTree({ onBattalionClick }: { onBattalionClick?: (battalion: B
           <div className="w-3 h-0.5 bg-muted-foreground" />
           <span>גדוד</span>
         </div>
+      </div>
+      <div className="flex gap-3 text-xs text-muted-foreground mb-4 flex-wrap border border-border/50 rounded-lg p-2.5">
+        <span className="font-semibold text-foreground/70">סוג:</span>
+        {Object.entries(unitTypeColors).map(([type, style]) => (
+          <div key={type} className="flex items-center gap-1">
+            <span className={`w-2 h-2 rounded-full ${style.dot}`} />
+            <span>{type}</span>
+          </div>
+        ))}
       </div>
       {tree.map((node, i) => (
         <TreeNodeComponent key={i} node={node} depth={0} onBattalionClick={onBattalionClick} />
