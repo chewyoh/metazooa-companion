@@ -110,7 +110,7 @@ const divisionWikiMap: Record<string, string> = {
 };
 
 function buildTree(): TreeNode[] {
-  const commandMap = new Map<string, Map<string, Map<string, { label: string; battalionId: string }[]>>>();
+  const commandMap = new Map<string, Map<string, Map<string, { label: string; battalionId: string; unitType: string }[]>>>();
 
   for (const b of battalions) {
     if (!commandMap.has(b.command)) commandMap.set(b.command, new Map());
