@@ -2248,6 +2248,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד מרכז",
     type: "לוגיסטיקה",
   },
+  {
+    id: "res-179-710",
+    name: 'גדוד הנדסה 710',
+    nameEn: 'Engineering Battalion 710',
+    number: 710,
+    brigade: 'חטיבה 179',
+    brigadeNumber: 179,
+    division: 'אוגדה 99 "הבזק"',
+    divisionNumber: 99,
+    command: "פיקוד מרכז",
+    type: "הנדסה קרבית",
+  },
 
   // ===== חטיבת הזקן (8) - אוגדה 91 "הגליל" - פיקוד צפון - מילואים =====
   {
