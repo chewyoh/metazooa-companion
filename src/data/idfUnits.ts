@@ -196,6 +196,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד דרום",
     type: "הנדסה קרבית",
   },
+  {
+    id: "givati-8170",
+    name: 'גדוד הנדסה 8170',
+    nameEn: 'Engineering Battalion 8170',
+    number: 8170,
+    brigade: 'חטיבת גבעתי',
+    brigadeNumber: 84,
+    division: 'אוגדה 162 "הפלדה"',
+    divisionNumber: 162,
+    command: "פיקוד דרום",
+    type: "הנדסה קרבית",
+  },
 
   // ===== חטיבת נח"ל (933) - אוגדה 162 - פיקוד דרום =====
   {
