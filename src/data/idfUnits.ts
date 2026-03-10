@@ -258,6 +258,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד דרום",
     type: "סיור",
   },
+  {
+    id: "nahal-7107",
+    name: 'גדוד הנדסה 7107 "רז"',
+    nameEn: 'Engineering Battalion 7107 "Raz"',
+    number: 7107,
+    brigade: 'חטיבת נח"ל',
+    brigadeNumber: 933,
+    division: 'אוגדה 162 "הפלדה"',
+    divisionNumber: 162,
+    command: "פיקוד דרום",
+    type: "הנדסה קרבית",
+  },
 
   // ===== חטיבת כפיר (900) - אוגדה 99 - פיקוד מרכז =====
   {
