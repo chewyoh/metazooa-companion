@@ -7,6 +7,7 @@ interface TreeNode {
   children: TreeNode[];
   wikiUrl?: string;
   battalionId?: string;
+  unitType?: string;
 }
 
 // Mapping brigade keys "name (number)" to Hebrew Wikipedia articles
@@ -109,7 +110,7 @@ const divisionWikiMap: Record<string, string> = {
 };
 
 function buildTree(): TreeNode[] {
-  const commandMap = new Map<string, Map<string, Map<string, { label: string; battalionId: string }[]>>>();
+  const commandMap = new Map<string, Map<string, Map<string, { label: string; battalionId: string; unitType: string }[]>>>();
 
   for (const b of battalions) {
     if (!commandMap.has(b.command)) commandMap.set(b.command, new Map());
@@ -119,7 +120,7 @@ function buildTree(): TreeNode[] {
     const brigMap = divMap.get(divKey)!;
     const brigKey = `${b.brigade} (${b.brigadeNumber})`;
     if (!brigMap.has(brigKey)) brigMap.set(brigKey, []);
-    brigMap.get(brigKey)!.push({ label: `${b.name} (${b.number})`, battalionId: b.id });
+    brigMap.get(brigKey)!.push({ label: `${b.name} (${b.number})`, battalionId: b.id, unitType: b.type });
   }
 
   const tree: TreeNode[] = [];
@@ -130,7 +131,7 @@ function buildTree(): TreeNode[] {
       for (const [brig, bns] of brigMap) {
         const brigNode: TreeNode = {
           label: brig,
-          children: bns.map((bn) => ({ label: bn.label, children: [], battalionId: bn.battalionId })),
+          children: bns.map((bn) => ({ label: bn.label, children: [], battalionId: bn.battalionId, unitType: bn.unitType })),
           wikiUrl: brigadeWikiMap[brig],
         };
         divNode.children.push(brigNode);
@@ -141,6 +142,21 @@ function buildTree(): TreeNode[] {
   }
   return tree;
 }
+
+const unitTypeColors: Record<string, { bg: string; dot: string }> = {
+  'חי"ר': { bg: "bg-amber-800/15", dot: "bg-amber-800" },
+  "שריון": { bg: "bg-gray-900/15", dot: "bg-gray-900 dark:bg-gray-300" },
+  "צנחנים": { bg: "bg-red-500/15", dot: "bg-red-500" },
+  "קומנדו": { bg: "bg-red-800/15", dot: "bg-red-800" },
+  "סיור": { bg: "bg-emerald-500/15", dot: "bg-emerald-500" },
+  "הנדסה קרבית": { bg: "bg-gray-400/15", dot: "bg-gray-400" },
+  "ארטילריה": { bg: "bg-orange-500/15", dot: "bg-orange-500" },
+  "לוגיסטיקה": { bg: "bg-blue-500/15", dot: "bg-blue-500" },
+  "מרחבי": { bg: "bg-yellow-400/15", dot: "bg-yellow-400" },
+  "הכשרה": { bg: "bg-purple-500/15", dot: "bg-purple-500" },
+  "מילואים": { bg: "bg-teal-500/15", dot: "bg-teal-500" },
+  "הגנה אווירית": { bg: "bg-sky-500/15", dot: "bg-sky-500" },
+};
 
 const depthColors = [
   "border-primary",
@@ -163,6 +179,8 @@ function TreeNodeComponent({ node, depth = 0, onBattalionClick }: { node: TreeNo
   const bgClass = depthBg[Math.min(depth, depthBg.length - 1)];
 
   if (isLeaf) {
+    const typeStyle = node.unitType ? unitTypeColors[node.unitType] : null;
+    const leafBg = typeStyle?.bg || bgClass;
     return (
       <button
         onClick={() => {
@@ -171,9 +189,10 @@ function TreeNodeComponent({ node, depth = 0, onBattalionClick }: { node: TreeNo
             if (battalion) onBattalionClick(battalion);
           }
         }}
-        className={`mr-4 py-1.5 px-3 rounded-md text-sm text-foreground ${bgClass} border-r-2 ${colorClass} w-full text-right hover:bg-primary/20 transition-colors cursor-pointer`}
+        className={`mr-4 py-1.5 px-3 rounded-md text-sm text-foreground ${leafBg} border-r-2 ${colorClass} w-full text-right hover:bg-primary/20 transition-colors cursor-pointer flex items-center gap-2`}
       >
-        {node.label}
+        {typeStyle && <span className={`w-2 h-2 rounded-full shrink-0 ${typeStyle.dot}`} />}
+        <span>{node.label}</span>
       </button>
     );
   }
@@ -230,7 +249,7 @@ export function OrgTree({ onBattalionClick }: { onBattalionClick?: (battalion: B
 
   return (
     <div className="w-full max-w-2xl mx-auto space-y-2">
-      <div className="flex gap-4 text-xs text-muted-foreground mb-4 flex-wrap">
+      <div className="flex gap-4 text-xs text-muted-foreground mb-2 flex-wrap">
         <div className="flex items-center gap-1.5">
           <div className="w-3 h-0.5 bg-primary" />
           <span>פיקוד</span>
@@ -247,6 +266,15 @@ export function OrgTree({ onBattalionClick }: { onBattalionClick?: (battalion: B
           <div className="w-3 h-0.5 bg-muted-foreground" />
           <span>גדוד</span>
         </div>
+      </div>
+      <div className="flex gap-3 text-xs text-muted-foreground mb-4 flex-wrap border border-border/50 rounded-lg p-2.5">
+        <span className="font-semibold text-foreground/70">סוג:</span>
+        {Object.entries(unitTypeColors).map(([type, style]) => (
+          <div key={type} className="flex items-center gap-1">
+            <span className={`w-2 h-2 rounded-full ${style.dot}`} />
+            <span>{type}</span>
+          </div>
+        ))}
       </div>
       {tree.map((node, i) => (
         <TreeNodeComponent key={i} node={node} depth={0} onBattalionClick={onBattalionClick} />
