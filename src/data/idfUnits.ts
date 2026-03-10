@@ -73,6 +73,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד צפון",
     type: "לוגיסטיקה",
   },
+  {
+    id: "golani-7086",
+    name: 'גדוד הנדסה 7086 "אלון"',
+    nameEn: 'Engineering Battalion 7086 "Alon"',
+    number: 7086,
+    brigade: 'חטיבת גולני',
+    brigadeNumber: 1,
+    division: 'אוגדה 36 "געש"',
+    divisionNumber: 36,
+    command: "פיקוד צפון",
+    type: "הנדסה קרבית",
+  },
 
   {
     id: "para-101",
@@ -184,6 +196,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד דרום",
     type: "הנדסה קרבית",
   },
+  {
+    id: "givati-8170",
+    name: 'גדוד הנדסה 8170',
+    nameEn: 'Engineering Battalion 8170',
+    number: 8170,
+    brigade: 'חטיבת גבעתי',
+    brigadeNumber: 84,
+    division: 'אוגדה 162 "הפלדה"',
+    divisionNumber: 162,
+    command: "פיקוד דרום",
+    type: "הנדסה קרבית",
+  },
 
   // ===== חטיבת נח"ל (933) - אוגדה 162 - פיקוד דרום =====
   {
@@ -233,6 +257,18 @@ export const battalions: Battalion[] = [
     divisionNumber: 162,
     command: "פיקוד דרום",
     type: "סיור",
+  },
+  {
+    id: "nahal-7107",
+    name: 'גדוד הנדסה 7107 "רז"',
+    nameEn: 'Engineering Battalion 7107 "Raz"',
+    number: 7107,
+    brigade: 'חטיבת נח"ל',
+    brigadeNumber: 933,
+    division: 'אוגדה 162 "הפלדה"',
+    divisionNumber: 162,
+    command: "פיקוד דרום",
+    type: "הנדסה קרבית",
   },
 
   // ===== חטיבת כפיר (900) - אוגדה 99 - פיקוד מרכז =====
@@ -826,6 +862,18 @@ export const battalions: Battalion[] = [
     divisionNumber: 38,
     command: "זרוע היבשה",
     type: "חי\"ר",
+  },
+  {
+    id: "bislamach-749",
+    name: 'גדוד הנדסה 749',
+    nameEn: 'Engineering Battalion 749',
+    number: 749,
+    brigade: 'חטיבת בסלמ"ח',
+    brigadeNumber: 828,
+    division: 'אוגדה 38 "ההכשרות"',
+    divisionNumber: 38,
+    command: "זרוע היבשה",
+    type: "הנדסה קרבית",
   },
 
   // ===== בה"ד 1 - בית הספר לקצינים - אוגדה 38 "ההכשרות" =====
@@ -2038,6 +2086,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד מרכז",
     type: "מילואים",
   },
+  {
+    id: "res-551-8219",
+    name: 'גדוד הנדסה 8219 "פלסי האש"',
+    nameEn: 'Engineering Battalion 8219 "Palsei HaEsh"',
+    number: 8219,
+    brigade: 'חטיבה 551',
+    brigadeNumber: 551,
+    division: 'אוגדה 98 "האש"',
+    divisionNumber: 98,
+    command: "פיקוד מרכז",
+    type: "הנדסה קרבית",
+  },
 
   // ===== חטיבה 646 "שועלי מרום" - אוגדה 99 - מילואים =====
   {
@@ -2187,6 +2247,18 @@ export const battalions: Battalion[] = [
     divisionNumber: 99,
     command: "פיקוד מרכז",
     type: "לוגיסטיקה",
+  },
+  {
+    id: "res-179-710",
+    name: 'גדוד הנדסה 710',
+    nameEn: 'Engineering Battalion 710',
+    number: 710,
+    brigade: 'חטיבה 179',
+    brigadeNumber: 179,
+    division: 'אוגדה 99 "הבזק"',
+    divisionNumber: 99,
+    command: "פיקוד מרכז",
+    type: "הנדסה קרבית",
   },
 
   // ===== חטיבת הזקן (8) - אוגדה 91 "הגליל" - פיקוד צפון - מילואים =====
@@ -3287,6 +3359,18 @@ export const battalions: Battalion[] = [
     divisionNumber: 252,
     command: "פיקוד דרום",
     type: "שריון",
+  },
+  {
+    id: "hamachatz-14-271",
+    name: 'גדוד 271 "פלסי סיני"',
+    nameEn: 'Battalion 271 "Palsei Sinai"',
+    number: 271,
+    brigade: 'חטיבת המחץ',
+    brigadeNumber: 14,
+    division: 'אוגדה 252 "סיני"',
+    divisionNumber: 252,
+    command: "פיקוד דרום",
+    type: "הנדסה קרבית",
   },
 
   // ===== עוצבת התבור (454) - אוגדה 252 "סיני" - פיקוד דרום =====
