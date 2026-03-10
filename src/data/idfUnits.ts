@@ -73,6 +73,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד צפון",
     type: "לוגיסטיקה",
   },
+  {
+    id: "golani-7086",
+    name: 'גדוד הנדסה 7086 "אלון"',
+    nameEn: 'Engineering Battalion 7086 "Alon"',
+    number: 7086,
+    brigade: 'חטיבת גולני',
+    brigadeNumber: 1,
+    division: 'אוגדה 36 "געש"',
+    divisionNumber: 36,
+    command: "פיקוד צפון",
+    type: "הנדסה קרבית",
+  },
 
   {
     id: "para-101",
