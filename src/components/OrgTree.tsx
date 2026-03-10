@@ -143,6 +143,21 @@ function buildTree(): TreeNode[] {
   return tree;
 }
 
+const unitTypeColors: Record<string, { bg: string; dot: string }> = {
+  'חי"ר': { bg: "bg-amber-800/15", dot: "bg-amber-800" },
+  "שריון": { bg: "bg-gray-900/15", dot: "bg-gray-900 dark:bg-gray-300" },
+  "צנחנים": { bg: "bg-red-500/15", dot: "bg-red-500" },
+  "קומנדו": { bg: "bg-red-800/15", dot: "bg-red-800" },
+  "סיור": { bg: "bg-emerald-500/15", dot: "bg-emerald-500" },
+  "הנדסה קרבית": { bg: "bg-gray-400/15", dot: "bg-gray-400" },
+  "ארטילריה": { bg: "bg-orange-500/15", dot: "bg-orange-500" },
+  "לוגיסטיקה": { bg: "bg-blue-500/15", dot: "bg-blue-500" },
+  "מרחבי": { bg: "bg-yellow-400/15", dot: "bg-yellow-400" },
+  "הכשרה": { bg: "bg-purple-500/15", dot: "bg-purple-500" },
+  "מילואים": { bg: "bg-teal-500/15", dot: "bg-teal-500" },
+  "הגנה אווירית": { bg: "bg-sky-500/15", dot: "bg-sky-500" },
+};
+
 const depthColors = [
   "border-primary",
   "border-accent",
