@@ -2086,6 +2086,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד מרכז",
     type: "מילואים",
   },
+  {
+    id: "res-551-8219",
+    name: 'גדוד הנדסה 8219 "פלסי האש"',
+    nameEn: 'Engineering Battalion 8219 "Palsei HaEsh"',
+    number: 8219,
+    brigade: 'חטיבה 551',
+    brigadeNumber: 551,
+    division: 'אוגדה 98 "האש"',
+    divisionNumber: 98,
+    command: "פיקוד מרכז",
+    type: "הנדסה קרבית",
+  },
 
   // ===== חטיבה 646 "שועלי מרום" - אוגדה 99 - מילואים =====
   {
