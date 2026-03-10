@@ -120,7 +120,7 @@ function buildTree(): TreeNode[] {
     const brigMap = divMap.get(divKey)!;
     const brigKey = `${b.brigade} (${b.brigadeNumber})`;
     if (!brigMap.has(brigKey)) brigMap.set(brigKey, []);
-    brigMap.get(brigKey)!.push({ label: `${b.name} (${b.number})`, battalionId: b.id });
+    brigMap.get(brigKey)!.push({ label: `${b.name} (${b.number})`, battalionId: b.id, unitType: b.type });
   }
 
   const tree: TreeNode[] = [];
