@@ -182,7 +182,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 162 "הפלדה"',
     divisionNumber: 162,
     command: "פיקוד דרום",
-    type: "חי\"ר",
+    type: "הנדסה קרבית",
   },
 
   // ===== חטיבת נח"ל (933) - אוגדה 162 - פיקוד דרום =====
