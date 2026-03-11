@@ -1430,7 +1430,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "negba-1895",
