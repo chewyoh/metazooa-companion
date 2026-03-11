@@ -1087,7 +1087,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "מרחבי",
   },
   {
     id: "417-5025",
@@ -1099,7 +1099,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "מרחבי",
   },
   {
     id: "417-5035",
@@ -1111,7 +1111,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "מרחבי",
   },
   {
     id: "417-7078",
@@ -1123,7 +1123,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "מרחבי",
   },
   {
     id: "417-9992",
@@ -1208,7 +1208,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "tel-hai-1852",
@@ -1220,7 +1220,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "tel-hai-1853",
@@ -1232,7 +1232,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "tel-hai-1854",
@@ -1244,7 +1244,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "tel-hai-1855",
@@ -1256,7 +1256,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
 
   // ===== חטיבת יזרעאלי (186) - אוגדה 96 "גלעד" - פיקוד מרכז =====
@@ -1270,7 +1270,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "yizraeli-1862",
@@ -1282,7 +1282,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "yizraeli-1863",
@@ -1294,7 +1294,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "yizraeli-1864",
@@ -1306,7 +1306,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "yizraeli-1865",
@@ -1318,7 +1318,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
 
   // ===== חטיבת יהונתן (187) - אוגדה 96 "גלעד" - פיקוד מרכז =====
@@ -1332,7 +1332,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "yehonatan-1872",
@@ -1344,7 +1344,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "yehonatan-1873",
@@ -1356,7 +1356,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "yehonatan-1874",
@@ -1368,7 +1368,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "yehonatan-1875",
@@ -1380,7 +1380,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
 
   // ===== חטיבת נגבה (189) - אוגדה 96 "גלעד" - פיקוד מרכז =====
@@ -1394,7 +1394,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "negba-1892",
@@ -1406,7 +1406,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "negba-1893",
@@ -1418,7 +1418,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "negba-1894",
@@ -1430,7 +1430,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "negba-1895",
@@ -1442,7 +1442,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
 
   // ===== אוגדת איו"ש (877) - חטמ"רים נוספים =====
@@ -1516,7 +1516,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 877 "יהודה ושומרון"',
     divisionNumber: 877,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "מרחבי",
   },
   {
     id: "terr-578-8211",
@@ -1528,7 +1528,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 877 "יהודה ושומרון"',
     divisionNumber: 877,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "מרחבי",
   },
   {
     id: "terr-906-43",
@@ -1776,7 +1776,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 80 "אדום"',
     divisionNumber: 80,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "מרחבי",
   },
   {
     id: "yoav-5034",
@@ -1788,7 +1788,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 80 "אדום"',
     divisionNumber: 80,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "מרחבי",
   },
   {
     id: "yoav-5073",
@@ -1800,7 +1800,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 80 "אדום"',
     divisionNumber: 80,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "מרחבי",
   },
   {
     id: "yoav-8116",
@@ -1812,7 +1812,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 80 "אדום"',
     divisionNumber: 80,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "מרחבי",
   },
   {
     id: "yoav-9271",
@@ -1824,7 +1824,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 80 "אדום"',
     divisionNumber: 80,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "מרחבי",
   },
 
   // ===== חטיבת ההרים (810) - אוגדה 210 "בשן" - פיקוד צפון =====
@@ -2034,7 +2034,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 98 "האש"',
     divisionNumber: 98,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "צנחנים",
   },
   {
     id: "res-55-6623",
@@ -2046,7 +2046,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 98 "האש"',
     divisionNumber: 98,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "צנחנים",
   },
   {
     id: "res-55-6625",
@@ -2058,7 +2058,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 98 "האש"',
     divisionNumber: 98,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "צנחנים",
   },
 
   // ===== חטיבה 551 "חטיבת הגדולים" - אוגדה 98 - מילואים =====
@@ -2072,7 +2072,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 98 "האש"',
     divisionNumber: 98,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "res-551-2",
@@ -2084,7 +2084,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 98 "האש"',
     divisionNumber: 98,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "res-551-8219",
@@ -2110,7 +2110,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 99 "הבזק"',
     divisionNumber: 99,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "צנחנים",
   },
   {
     id: "res-646-466",
@@ -2122,7 +2122,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 99 "הבזק"',
     divisionNumber: 99,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "צנחנים",
   },
   {
     id: "res-646-8105",
@@ -2134,7 +2134,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 99 "הבזק"',
     divisionNumber: 99,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "צנחנים",
   },
   {
     id: "res-646-6646",
@@ -2160,7 +2160,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 99 "הבזק"',
     divisionNumber: 99,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "res-11-7220",
@@ -2172,7 +2172,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 99 "הבזק"',
     divisionNumber: 99,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "res-11-8226",
@@ -2184,7 +2184,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 99 "הבזק"',
     divisionNumber: 99,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "res-11-7810",
@@ -2210,7 +2210,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 99 "הבזק"',
     divisionNumber: 99,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "res-179-8104",
@@ -2222,7 +2222,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 99 "הבזק"',
     divisionNumber: 99,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "res-179-8130",
@@ -2234,7 +2234,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 99 "הבזק"',
     divisionNumber: 99,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "res-179-5579",
@@ -2272,7 +2272,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 91 "הגליל"',
     divisionNumber: 91,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "res-8-121",
@@ -2284,7 +2284,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 91 "הגליל"',
     divisionNumber: 91,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "res-8-129",
@@ -2296,7 +2296,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 91 "הגליל"',
     divisionNumber: 91,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "res-8-gdsr8",
@@ -2335,7 +2335,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "res-228-8207",
@@ -2347,7 +2347,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "res-228-9308",
@@ -2359,7 +2359,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "res-228-6228",
@@ -2397,7 +2397,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 162 "הפלדה"',
     divisionNumber: 162,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "res-5-8110",
@@ -2409,7 +2409,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 162 "הפלדה"',
     divisionNumber: 162,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "res-5-8111",
@@ -2421,7 +2421,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 162 "הפלדה"',
     divisionNumber: 162,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "res-5-6555",
@@ -2459,7 +2459,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 36 "געש"',
     divisionNumber: 36,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "res-16-8119",
@@ -2471,7 +2471,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 36 "געש"',
     divisionNumber: 36,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "res-16-9207",
@@ -2483,7 +2483,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 36 "געש"',
     divisionNumber: 36,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "res-16-6310",
@@ -2521,7 +2521,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 99 "הבזק"',
     divisionNumber: 99,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "res-6-2",
@@ -2533,7 +2533,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 99 "הבזק"',
     divisionNumber: 99,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
 
 
@@ -2598,7 +2598,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "nesher-226-9255",
@@ -2610,7 +2610,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "nesher-226-9263",
@@ -2622,7 +2622,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "nesher-226-6226",
@@ -2660,7 +2660,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "kiryati-4-7421",
@@ -2672,7 +2672,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "kiryati-4-9218",
@@ -2684,7 +2684,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "kiryati-4-7071",
@@ -2722,7 +2722,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "iron-fist-205-9212",
@@ -2734,7 +2734,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "iron-fist-205-9215",
@@ -2746,7 +2746,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "iron-fist-205-5205",
@@ -2772,7 +2772,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "ארטילריה",
   },
   {
     id: "hatkuma-7042",
@@ -2784,7 +2784,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "ארטילריה",
   },
   {
     id: "hatkuma-9238",
@@ -2796,7 +2796,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "ארטילריה",
   },
   {
     id: "hatkuma-9242",
@@ -2808,7 +2808,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "ארטילריה",
   },
   {
     id: "hatkuma-6213",
@@ -2820,7 +2820,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "ארטילריה",
   },
 
   // ===== חטיבת עציוני (6) - אוגדה 36 "געש" - פיקוד צפון - מילואים =====
@@ -2834,7 +2834,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 36 "געש"',
     divisionNumber: 36,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "etzioni-6-9219",
@@ -2846,7 +2846,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 36 "געש"',
     divisionNumber: 36,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "etzioni-6-9220",
@@ -2858,7 +2858,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 36 "געש"',
     divisionNumber: 36,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "etzioni-6-6408",
@@ -2908,7 +2908,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 91 "הגליל"',
     divisionNumber: 91,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "adirim-7338-9231",
@@ -2920,7 +2920,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 91 "הגליל"',
     divisionNumber: 91,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "adirim-7338-9294",
@@ -2932,7 +2932,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 91 "הגליל"',
     divisionNumber: 91,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
 
   // ===== עוצבת יפתח (679) - אוגדה 210 "בשן" - פיקוד צפון - מילואים =====
@@ -2946,7 +2946,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 210 "בשן"',
     divisionNumber: 210,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "yiftach-679-8112",
@@ -2958,7 +2958,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 210 "בשן"',
     divisionNumber: 210,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "yiftach-679-9232",
@@ -2970,7 +2970,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 210 "בשן"',
     divisionNumber: 210,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "yiftach-679-9227",
@@ -3034,7 +3034,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 210 "בשן"',
     divisionNumber: 210,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "oded-9-9204",
@@ -3046,7 +3046,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 210 "בשן"',
     divisionNumber: 210,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "oded-9-9211",
@@ -3058,7 +3058,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 210 "בשן"',
     divisionNumber: 210,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "oded-9-6724",
@@ -3084,7 +3084,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 91 "הגליל"',
     divisionNumber: 91,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "alexandroni-3-8101",
@@ -3096,7 +3096,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 91 "הגליל"',
     divisionNumber: 91,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "alexandroni-3-9203",
@@ -3108,7 +3108,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 91 "הגליל"',
     divisionNumber: 91,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "alexandroni-3-6609",
@@ -3158,7 +3158,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 252 "סיני"',
     divisionNumber: 252,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "negev-12-9208",
@@ -3170,7 +3170,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 252 "סיני"',
     divisionNumber: 252,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "negev-12-9217",
@@ -3182,7 +3182,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 252 "סיני"',
     divisionNumber: 252,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "negev-12-6863",
@@ -3208,7 +3208,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 252 "סיני"',
     divisionNumber: 252,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "jerusalem-16-8119",
@@ -3220,7 +3220,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 252 "סיני"',
     divisionNumber: 252,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "jerusalem-16-9207",
@@ -3232,7 +3232,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 252 "סיני"',
     divisionNumber: 252,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "jerusalem-16-6310",
@@ -3258,7 +3258,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 252 "סיני"',
     divisionNumber: 252,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "ramon-261-8717",
@@ -3270,7 +3270,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 252 "סיני"',
     divisionNumber: 252,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "ramon-261-6261",
