@@ -2820,7 +2820,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 146 "המפץ"',
     divisionNumber: 146,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "ארטילריה",
   },
 
   // ===== חטיבת עציוני (6) - אוגדה 36 "געש" - פיקוד צפון - מילואים =====
