@@ -2234,7 +2234,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 99 "הבזק"',
     divisionNumber: 99,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "שריון",
   },
   {
     id: "res-179-5579",
