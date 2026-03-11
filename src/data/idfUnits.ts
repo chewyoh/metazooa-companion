@@ -1380,7 +1380,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 96 "גלעד"',
     divisionNumber: 96,
     command: "פיקוד מרכז",
-    type: "מילואים",
+    type: "חי\"ר",
   },
 
   // ===== חטיבת נגבה (189) - אוגדה 96 "גלעד" - פיקוד מרכז =====
