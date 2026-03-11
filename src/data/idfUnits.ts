@@ -3270,7 +3270,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 252 "סיני"',
     divisionNumber: 252,
     command: "פיקוד דרום",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "ramon-261-6261",
