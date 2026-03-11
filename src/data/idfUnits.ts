@@ -3108,7 +3108,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 91 "הגליל"',
     divisionNumber: 91,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "alexandroni-3-6609",
