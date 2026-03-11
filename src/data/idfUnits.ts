@@ -3058,7 +3058,7 @@ export const battalions: Battalion[] = [
     division: 'אוגדה 210 "בשן"',
     divisionNumber: 210,
     command: "פיקוד צפון",
-    type: "מילואים",
+    type: "חי\"ר",
   },
   {
     id: "oded-9-6724",
