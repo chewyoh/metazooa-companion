@@ -3458,14 +3458,19 @@ export function compareBattalions(
 
 export function getDailyBattalion(): Battalion {
   // Use date as seed for daily puzzle — deterministic across all clients
+  // Mulberry32-style PRNG seeded with a stronger hash for good distribution
   const dateStr = getTodayKey();
-  let hash = 0;
+  let h = 0x811c9dc5; // FNV offset basis
   for (let i = 0; i < dateStr.length; i++) {
-    const char = dateStr.charCodeAt(i);
-    hash = (hash << 5) - hash + char;
-    hash |= 0;
+    h ^= dateStr.charCodeAt(i);
+    h = Math.imul(h, 0x01000193); // FNV prime
   }
-  const index = Math.abs(hash) % battalions.length;
+  // One round of Mulberry32 to scramble further
+  let t = (h >>> 0) + 0x6d2b79f5;
+  t = Math.imul(t ^ (t >>> 15), t | 1);
+  t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+  const final = ((t ^ (t >>> 14)) >>> 0);
+  const index = final % battalions.length;
   return battalions[index];
 }
 
