@@ -1615,20 +1615,6 @@ export const battalions: Battalion[] = [
     type: "מרחבי",
   },
 
-  // ===== חטיבת האש 990 - אוגדה 99 =====
-  {
-    id: "art-990",
-    name: 'חטיבת האש 990',
-    nameEn: '990th Fire Brigade HQ',
-    number: 990,
-    brigade: 'חטיבת האש 990',
-    brigadeNumber: 990,
-    division: 'אוגדה 99 "הבזק"',
-    divisionNumber: 99,
-    command: "פיקוד מרכז",
-    type: "ארטילריה",
-  },
-
   {
     id: "baram-300-299",
     name: 'גדוד 299 (חרב)',
