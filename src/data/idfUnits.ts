@@ -2017,7 +2017,7 @@ export const battalions: Battalion[] = [
     number: 843,
     brigade: 'חטיבת גפן',
     brigadeNumber: 7643,
-    division: 'אוגדה 143 "פיירפוקס"',
+    division: 'אוגדה 143 "שועלי האש"',
     divisionNumber: 143,
     command: "פיקוד דרום",
     type: "שריון",
