@@ -103,7 +103,7 @@ const divisionWikiMap: Record<string, string> = {
   'אוגדה 210 "בשן" (210)': "https://he.wikipedia.org/wiki/אוגדה_210",
   'אוגדה 80 "אדום" (80)': "https://he.wikipedia.org/wiki/אוגדה_80",
   'אוגדה 877 "יהודה ושומרון" (877)': "https://he.wikipedia.org/wiki/אוגדה_877",
-  'אוגדה 143 "פיירפוקס" (143)': "https://he.wikipedia.org/wiki/אוגדה_143",
+  'אוגדה 143 "שועלי האש" (143)': "https://he.wikipedia.org/wiki/אוגדה_143",
   'אוגדה 146 "המפץ" (146)': "https://he.wikipedia.org/wiki/אוגדה_146",
   'אוגדה 96 "גלעד" (96)': "https://he.wikipedia.org/wiki/אוגדה_96",
   'אוגדה 252 "סיני" (252)': "https://he.wikipedia.org/wiki/עוצבת_סיני",
