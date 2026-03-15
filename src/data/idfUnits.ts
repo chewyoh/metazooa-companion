@@ -1615,20 +1615,6 @@ export const battalions: Battalion[] = [
     type: "מרחבי",
   },
 
-  // ===== חטיבת האש 990 - אוגדה 99 =====
-  {
-    id: "art-990",
-    name: 'חטיבת האש 990',
-    nameEn: '990th Fire Brigade HQ',
-    number: 990,
-    brigade: 'חטיבת האש 990',
-    brigadeNumber: 990,
-    division: 'אוגדה 99 "הבזק"',
-    divisionNumber: 99,
-    command: "פיקוד מרכז",
-    type: "ארטילריה",
-  },
-
   {
     id: "baram-300-299",
     name: 'גדוד 299 (חרב)',
@@ -2148,6 +2134,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד מרכז",
     type: "סיור",
   },
+  {
+    id: "res-646-5646",
+    name: 'גדס"ם 5646',
+    nameEn: 'Support Battalion 5646',
+    number: 5646,
+    brigade: 'חטיבה 646',
+    brigadeNumber: 646,
+    division: 'אוגדה 99 "הבזק"',
+    divisionNumber: 99,
+    command: "פיקוד מרכז",
+    type: "לוגיסטיקה",
+  },
 
   // ===== חטיבת יפתח (11) - אוגדה 99 - מילואים =====
   {
@@ -2197,6 +2195,18 @@ export const battalions: Battalion[] = [
     divisionNumber: 99,
     command: "פיקוד מרכז",
     type: "סיור",
+  },
+  {
+    id: "res-11-5011",
+    name: 'גדס"ם 5011',
+    nameEn: 'Support Battalion 5011',
+    number: 5011,
+    brigade: 'חטיבת יפתח',
+    brigadeNumber: 11,
+    division: 'אוגדה 99 "הבזק"',
+    divisionNumber: 99,
+    command: "פיקוד מרכז",
+    type: "לוגיסטיקה",
   },
 
   // ===== חטיבה 179 "עוצבת ראם" - אוגדה 99 - מילואים =====
@@ -2518,9 +2528,9 @@ export const battalions: Battalion[] = [
     number: 8906,
     brigade: 'חטיבה 6',
     brigadeNumber: 6,
-    division: 'אוגדה 99 "הבזק"',
-    divisionNumber: 99,
-    command: "פיקוד מרכז",
+    division: 'אוגדה 36 "געש"',
+    divisionNumber: 36,
+    command: "פיקוד צפון",
     type: "חי\"ר",
   },
   {
@@ -2530,9 +2540,9 @@ export const battalions: Battalion[] = [
     number: 8907,
     brigade: 'חטיבה 6',
     brigadeNumber: 6,
-    division: 'אוגדה 99 "הבזק"',
-    divisionNumber: 99,
-    command: "פיקוד מרכז",
+    division: 'אוגדה 36 "געש"',
+    divisionNumber: 36,
+    command: "פיקוד צפון",
     type: "חי\"ר",
   },
 
