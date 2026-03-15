@@ -2134,6 +2134,18 @@ export const battalions: Battalion[] = [
     command: "פיקוד מרכז",
     type: "סיור",
   },
+  {
+    id: "res-646-5646",
+    name: 'גדס"ם 5646',
+    nameEn: 'Support Battalion 5646',
+    number: 5646,
+    brigade: 'חטיבה 646',
+    brigadeNumber: 646,
+    division: 'אוגדה 99 "הבזק"',
+    divisionNumber: 99,
+    command: "פיקוד מרכז",
+    type: "לוגיסטיקה",
+  },
 
   // ===== חטיבת יפתח (11) - אוגדה 99 - מילואים =====
   {
