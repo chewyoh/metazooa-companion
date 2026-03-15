@@ -52,7 +52,7 @@ const brigadeWikiMap: Record<string, string> = {
   "חטיבת מנשה (431)": "https://he.wikipedia.org/wiki/חטמ%22ר_מנשה",
   "חטיבת שומרון (442)": "https://he.wikipedia.org/wiki/חטמ%22ר_שומרון",
   // הגנה אווירית
-  "חטיבת האש 990 (990)": "https://he.wikipedia.org/wiki/חטיבת_האש_990",
+  
   "חטיבת האש 215 (215)": "https://he.wikipedia.org/wiki/חטיבת_האש_215",
   // אוגדות מילואים
   "חטיבת תל-חי (185)": "https://he.wikipedia.org/wiki/חטיבת_תל-חי",
