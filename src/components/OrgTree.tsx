@@ -155,6 +155,7 @@ const unitTypeColors: Record<string, { bg: string; dot: string }> = {
   "מרחבי": { bg: "bg-yellow-400/15", dot: "bg-yellow-400" },
   "הכשרה": { bg: "bg-purple-500/15", dot: "bg-purple-500" },
   "הגנה אווירית": { bg: "bg-sky-500/15", dot: "bg-sky-500" },
+  "איסוף": { bg: "bg-teal-500/15", dot: "bg-teal-500" },
 };
 
 const depthColors = [
