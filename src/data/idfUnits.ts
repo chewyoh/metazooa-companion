@@ -3431,7 +3431,7 @@ export const battalions: Battalion[] = [
     number: 414,
     brigade: 'כפיפות ישירה לאוגדה',
     brigadeNumber: 0,
-    division: 'אוגדה 143 "פיירפוקס"',
+    division: 'אוגדה 143 "שועלי האש"',
     divisionNumber: 143,
     command: "פיקוד דרום",
     type: "איסוף",
