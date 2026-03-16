@@ -2520,32 +2520,6 @@ export const battalions: Battalion[] = [
     type: "לוגיסטיקה",
   },
 
-  // ===== חטיבה 6 "נח"ל מילואים" - אוגדה 99 - מילואים =====
-  {
-    id: "res-6-1",
-    name: 'גדוד 8906',
-    nameEn: '8906th Reserve Infantry Battalion',
-    number: 8906,
-    brigade: 'חטיבה 6',
-    brigadeNumber: 6,
-    division: 'אוגדה 36 "געש"',
-    divisionNumber: 36,
-    command: "פיקוד צפון",
-    type: "חי\"ר",
-  },
-  {
-    id: "res-6-2",
-    name: 'גדוד 8907',
-    nameEn: '8907th Reserve Infantry Battalion',
-    number: 8907,
-    brigade: 'חטיבה 6',
-    brigadeNumber: 6,
-    division: 'אוגדה 36 "געש"',
-    divisionNumber: 36,
-    command: "פיקוד צפון",
-    type: "חי\"ר",
-  },
-
 
   // ===== חטיבת כרמלי (2) - אוגדה 146 "המפץ" - פיקוד צפון =====
   {
