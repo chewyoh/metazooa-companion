@@ -134,6 +134,7 @@ const Index = () => {
     if (isWon) {
       setWon(true);
       if (!isFreePlay) setStreak(updateStreak(true));
+      setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
     } else if (isLost) {
       setLost(true);
       if (!isFreePlay) setStreak(updateStreak(false));
