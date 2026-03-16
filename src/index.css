@@ -113,8 +113,14 @@
 
   body {
     @apply text-foreground bg-background;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Bebas Neue', 'Heebo', sans-serif;
     direction: rtl;
+  }
+
+  /* Use Heebo for Hebrew characters */
+  @font-face {
+    font-family: 'Heebo';
+    unicode-range: U+0590-05FF, U+FB1D-FB4F;
   }
 
   .dark body,
