@@ -97,12 +97,6 @@ const Index = () => {
   const [activeTab, setActiveTab] = useState<"game" | "tree">("game");
   const [streak, setStreak] = useState<StreakData>(() => loadStreak());
 
-  // Scroll to top when won
-  useEffect(() => {
-    if (won) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  }, [won]);
 
 
   // Load saved state only for daily mode
@@ -140,6 +134,7 @@ const Index = () => {
     if (isWon) {
       setWon(true);
       if (!isFreePlay) setStreak(updateStreak(true));
+      setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
     } else if (isLost) {
       setLost(true);
       if (!isFreePlay) setStreak(updateStreak(false));
