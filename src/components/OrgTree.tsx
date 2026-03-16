@@ -71,12 +71,11 @@ const brigadeWikiMap: Record<string, string> = {
   "חטיבת אלון (228)": "https://he.wikipedia.org/wiki/חטיבת_אלון",
   "חטיבה 5 (5)": "https://he.wikipedia.org/wiki/חטיבה_5",
   "חטיבה 16 (16)": "https://he.wikipedia.org/wiki/חטיבה_16",
-  "חטיבה 6 (6)": "https://he.wikipedia.org/wiki/חטיבה_6",
+  "חטיבת עציוני (6)": "https://he.wikipedia.org/wiki/חטיבת_עציוני",
   
   "חטיבת כרמלי (2)": "https://he.wikipedia.org/wiki/חטיבת_כרמלי",
   "חטיבת קרייתי (4)": "https://he.wikipedia.org/wiki/חטיבת_קרייתי",
   "חטיבת אגרוף הברזל (205)": "https://he.wikipedia.org/wiki/חטיבה_205",
-  "חטיבת עציוני (6)": "https://he.wikipedia.org/wiki/חטיבת_עציוני",
   "עוצבת יפתח (679)": "https://he.wikipedia.org/wiki/חטיבה_679",
   "חטיבת עודד (9)": "https://he.wikipedia.org/wiki/חטיבת_עודד",
   "חטיבת אלכסנדרוני (3)": "https://he.wikipedia.org/wiki/חטיבת_אלכסנדרוני",
