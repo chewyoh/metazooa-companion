@@ -117,12 +117,6 @@
     direction: rtl;
   }
 
-  /* Use Heebo for Hebrew characters */
-  @font-face {
-    font-family: 'Heebo';
-    unicode-range: U+0590-05FF, U+FB1D-FB4F;
-  }
-
   .dark body,
   body.dark-camo {
     background-color: hsl(100, 10%, 8%);
