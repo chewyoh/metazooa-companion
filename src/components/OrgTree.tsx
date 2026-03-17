@@ -8,6 +8,7 @@ interface TreeNode {
   wikiUrl?: string;
   battalionId?: string;
   unitType?: string;
+  service?: string;
 }
 
 // Mapping brigade keys "name (number)" to Hebrew Wikipedia articles
@@ -109,7 +110,7 @@ const divisionWikiMap: Record<string, string> = {
 };
 
 function buildTree(): TreeNode[] {
-  const commandMap = new Map<string, Map<string, Map<string, { label: string; battalionId: string; unitType: string }[]>>>();
+  const commandMap = new Map<string, Map<string, Map<string, { label: string; battalionId: string; unitType: string; service: string }[]>>>();
 
   for (const b of battalions) {
     if (!commandMap.has(b.command)) commandMap.set(b.command, new Map());
@@ -119,7 +120,7 @@ function buildTree(): TreeNode[] {
     const brigMap = divMap.get(divKey)!;
     const brigKey = `${b.brigade} (${b.brigadeNumber})`;
     if (!brigMap.has(brigKey)) brigMap.set(brigKey, []);
-    brigMap.get(brigKey)!.push({ label: `${b.name} (${b.number})`, battalionId: b.id, unitType: b.type });
+    brigMap.get(brigKey)!.push({ label: `${b.name} (${b.number})`, battalionId: b.id, unitType: b.type, service: b.service });
   }
 
   const tree: TreeNode[] = [];
@@ -130,7 +131,7 @@ function buildTree(): TreeNode[] {
       for (const [brig, bns] of brigMap) {
         const brigNode: TreeNode = {
           label: brig,
-          children: bns.map((bn) => ({ label: bn.label, children: [], battalionId: bn.battalionId, unitType: bn.unitType })),
+          children: bns.map((bn) => ({ label: bn.label, children: [], battalionId: bn.battalionId, unitType: bn.unitType, service: bn.service })),
           wikiUrl: brigadeWikiMap[brig],
         };
         divNode.children.push(brigNode);
@@ -180,6 +181,7 @@ function TreeNodeComponent({ node, depth = 0, onBattalionClick }: { node: TreeNo
   if (isLeaf) {
     const typeStyle = node.unitType ? unitTypeColors[node.unitType] : null;
     const leafBg = typeStyle?.bg || bgClass;
+    const isSadir = node.service === "סדיר";
     return (
       <button
         onClick={() => {
@@ -188,7 +190,7 @@ function TreeNodeComponent({ node, depth = 0, onBattalionClick }: { node: TreeNo
             if (battalion) onBattalionClick(battalion);
           }
         }}
-        className={`mr-4 py-1.5 px-3 rounded-md text-sm text-foreground ${leafBg} border-r-2 ${colorClass} w-full text-right hover:bg-primary/20 transition-colors cursor-pointer flex items-center gap-2`}
+        className={`mr-4 py-1.5 px-3 rounded-md text-sm text-foreground ${leafBg} border-r-2 ${colorClass} w-full text-right hover:bg-primary/20 transition-colors cursor-pointer flex items-center gap-2 ${isSadir ? "font-bold" : "font-normal"}`}
       >
         {typeStyle && <span className={`w-2 h-2 rounded-full shrink-0 ${typeStyle.dot}`} />}
         <span>{node.label}</span>
