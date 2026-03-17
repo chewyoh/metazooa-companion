@@ -3507,7 +3507,7 @@ const reserveBrigades = new Set([
 // Fully-reserve divisions
 const reserveDivisions = new Set([143, 146, 252]);
 
-function determineService(b: Omit<Battalion, "service">): "סדיר" | "מילואים" {
+function determineService(b: BattalionBase): "סדיר" | "מילואים" {
   if (b.id.startsWith("res-")) return "מילואים";
   if (b.name.includes("מילואים")) return "מילואים";
   if (reserveDivisions.has(b.divisionNumber)) return "מילואים";
@@ -3516,9 +3516,10 @@ function determineService(b: Omit<Battalion, "service">): "סדיר" | "מילו
 }
 
 // Apply service field to all battalions
-for (const b of battalions) {
-  (b as any).service = determineService(b);
-}
+export const battalions: Battalion[] = rawBattalions.map(b => ({
+  ...b,
+  service: determineService(b),
+}));
 
 // Classification levels for comparison
 export const classificationLevels = [
@@ -3555,15 +3556,12 @@ export function compareBattalions(
 }
 
 export function getDailyBattalion(): Battalion {
-  // Use date as seed for daily puzzle — deterministic across all clients
-  // Mulberry32-style PRNG seeded with a stronger hash for good distribution
   const dateStr = getTodayKey();
-  let h = 0x811c9dc5; // FNV offset basis
+  let h = 0x811c9dc5;
   for (let i = 0; i < dateStr.length; i++) {
     h ^= dateStr.charCodeAt(i);
-    h = Math.imul(h, 0x01000193); // FNV prime
+    h = Math.imul(h, 0x01000193);
   }
-  // One round of Mulberry32 to scramble further
   let t = (h >>> 0) + 0x6d2b79f5;
   t = Math.imul(t ^ (t >>> 15), t | 1);
   t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
