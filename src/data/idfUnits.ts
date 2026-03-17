@@ -3511,15 +3511,17 @@ const reserveDivisions = new Set([143, 146, 252]);
 function determineService(b: BattalionBase): "סדיר" | "מילואים" {
   if (b.id.startsWith("res-")) return "מילואים";
   if (b.name.includes("מילואים")) return "מילואים";
+  if (b.type === "לוגיסטיקה") return "מילואים";
   if (reserveDivisions.has(b.divisionNumber)) return "מילואים";
   if (reserveBrigades.has(`${b.brigadeNumber}-${b.divisionNumber}`)) return "מילואים";
   return "סדיר";
 }
 
 // Apply service field to all battalions
+// If a battalion has an explicit `service`, use it; otherwise auto-detect.
 export const battalions: Battalion[] = rawBattalions.map(b => ({
   ...b,
-  service: determineService(b),
+  service: b.service ?? determineService(b),
 }));
 
 // Classification levels for comparison
