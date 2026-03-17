@@ -1,18 +1,21 @@
-export interface Battalion {
+interface BattalionBase {
   id: string;
-  name: string;         // Hebrew name
-  nameEn: string;       // English name for reference
-  number: number;       // Battalion number
-  brigade: string;      // Brigade name (Hebrew)
+  name: string;
+  nameEn: string;
+  number: number;
+  brigade: string;
   brigadeNumber: number;
-  division: string;     // Division name (Hebrew)
+  division: string;
   divisionNumber: number;
-  command: string;      // Command name (Hebrew)
-  type: string;         // סוג: חי"ר, שריון, צנחנים, קומנדו, ארטילריה
+  command: string;
+  type: string;
+}
+
+export interface Battalion extends BattalionBase {
   service: "סדיר" | "מילואים";
 }
 
-export const battalions: Battalion[] = [
+const rawBattalions: BattalionBase[] = [
   // ===== חטיבת גולני (1) - אוגדה 36 - פיקוד צפון =====
   {
     id: "golani-12",
