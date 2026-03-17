@@ -181,6 +181,7 @@ function TreeNodeComponent({ node, depth = 0, onBattalionClick }: { node: TreeNo
   if (isLeaf) {
     const typeStyle = node.unitType ? unitTypeColors[node.unitType] : null;
     const leafBg = typeStyle?.bg || bgClass;
+    const isSadir = node.service === "סדיר";
     return (
       <button
         onClick={() => {
@@ -189,7 +190,7 @@ function TreeNodeComponent({ node, depth = 0, onBattalionClick }: { node: TreeNo
             if (battalion) onBattalionClick(battalion);
           }
         }}
-        className={`mr-4 py-1.5 px-3 rounded-md text-sm text-foreground ${leafBg} border-r-2 ${colorClass} w-full text-right hover:bg-primary/20 transition-colors cursor-pointer flex items-center gap-2`}
+        className={`mr-4 py-1.5 px-3 rounded-md text-sm text-foreground ${leafBg} border-r-2 ${colorClass} w-full text-right hover:bg-primary/20 transition-colors cursor-pointer flex items-center gap-2 ${isSadir ? "font-bold" : "font-normal"}`}
       >
         {typeStyle && <span className={`w-2 h-2 rounded-full shrink-0 ${typeStyle.dot}`} />}
         <span>{node.label}</span>
