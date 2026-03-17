@@ -9,6 +9,7 @@ interface BattalionBase {
   divisionNumber: number;
   command: string;
   type: string;
+  service?: "סדיר" | "מילואים";
 }
 
 export interface Battalion extends BattalionBase {
