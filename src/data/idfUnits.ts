@@ -9,6 +9,7 @@ export interface Battalion {
   divisionNumber: number;
   command: string;      // Command name (Hebrew)
   type: string;         // סוג: חי"ר, שריון, צנחנים, קומנדו, ארטילריה
+  service: "סדיר" | "מילואים";
 }
 
 export const battalions: Battalion[] = [
