@@ -3483,12 +3483,47 @@ export const battalions: Battalion[] = [
   },
 ];
 
+// Reserve brigade identifiers: (brigadeNumber, divisionNumber) pairs for fully-reserve brigades
+const reserveBrigades = new Set([
+  // אוגדה 98 reserve brigades
+  "55-98", "551-98",
+  // אוגדה 99 reserve brigades
+  "646-99", "11-99", "179-99",
+  // אוגדה 91 reserve brigades
+  "8-91", "3-91", "7338-91",
+  // אוגדה 146 reserve brigades
+  "228-146", "2-146", "4-146", "205-146", "226-146", "213-146",
+  // אוגדה 210 reserve brigades
+  "679-210", "209-210", "9-210",
+  // אוגדה 36 reserve brigades
+  "16-36", "6-36",
+  // אוגדה 162 reserve brigades
+  "5-162",
+]);
+
+// Fully-reserve divisions
+const reserveDivisions = new Set([143, 146, 252]);
+
+function determineService(b: Omit<Battalion, "service">): "סדיר" | "מילואים" {
+  if (b.id.startsWith("res-")) return "מילואים";
+  if (b.name.includes("מילואים")) return "מילואים";
+  if (reserveDivisions.has(b.divisionNumber)) return "מילואים";
+  if (reserveBrigades.has(`${b.brigadeNumber}-${b.divisionNumber}`)) return "מילואים";
+  return "סדיר";
+}
+
+// Apply service field to all battalions
+for (const b of battalions) {
+  (b as any).service = determineService(b);
+}
+
 // Classification levels for comparison
 export const classificationLevels = [
   { key: "command", label: "פיקוד" },
   { key: "division", label: "אוגדה" },
   { key: "brigade", label: "חטיבה" },
   { key: "type", label: "סוג" },
+  { key: "service", label: "שירות" },
 ] as const;
 
 export type ClassificationKey = typeof classificationLevels[number]["key"];
@@ -3510,6 +3545,7 @@ export function compareBattalions(
       division: guess.division === target.division,
       brigade: guess.brigade === target.brigade,
       type: guess.type === target.type,
+      service: guess.service === target.service,
     },
     isCorrect: guess.id === target.id,
   };
