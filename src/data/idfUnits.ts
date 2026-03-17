@@ -1,17 +1,21 @@
-export interface Battalion {
+interface BattalionBase {
   id: string;
-  name: string;         // Hebrew name
-  nameEn: string;       // English name for reference
-  number: number;       // Battalion number
-  brigade: string;      // Brigade name (Hebrew)
+  name: string;
+  nameEn: string;
+  number: number;
+  brigade: string;
   brigadeNumber: number;
-  division: string;     // Division name (Hebrew)
+  division: string;
   divisionNumber: number;
-  command: string;      // Command name (Hebrew)
-  type: string;         // סוג: חי"ר, שריון, צנחנים, קומנדו, ארטילריה
+  command: string;
+  type: string;
 }
 
-export const battalions: Battalion[] = [
+export interface Battalion extends BattalionBase {
+  service: "סדיר" | "מילואים";
+}
+
+const rawBattalions: BattalionBase[] = [
   // ===== חטיבת גולני (1) - אוגדה 36 - פיקוד צפון =====
   {
     id: "golani-12",
@@ -3482,12 +3486,48 @@ export const battalions: Battalion[] = [
   },
 ];
 
+// Reserve brigade identifiers: (brigadeNumber, divisionNumber) pairs for fully-reserve brigades
+const reserveBrigades = new Set([
+  // אוגדה 98 reserve brigades
+  "55-98", "551-98",
+  // אוגדה 99 reserve brigades
+  "646-99", "11-99", "179-99",
+  // אוגדה 91 reserve brigades
+  "8-91", "3-91", "7338-91",
+  // אוגדה 146 reserve brigades
+  "228-146", "2-146", "4-146", "205-146", "226-146", "213-146",
+  // אוגדה 210 reserve brigades
+  "679-210", "209-210", "9-210",
+  // אוגדה 36 reserve brigades
+  "16-36", "6-36",
+  // אוגדה 162 reserve brigades
+  "5-162",
+]);
+
+// Fully-reserve divisions
+const reserveDivisions = new Set([143, 146, 252]);
+
+function determineService(b: BattalionBase): "סדיר" | "מילואים" {
+  if (b.id.startsWith("res-")) return "מילואים";
+  if (b.name.includes("מילואים")) return "מילואים";
+  if (reserveDivisions.has(b.divisionNumber)) return "מילואים";
+  if (reserveBrigades.has(`${b.brigadeNumber}-${b.divisionNumber}`)) return "מילואים";
+  return "סדיר";
+}
+
+// Apply service field to all battalions
+export const battalions: Battalion[] = rawBattalions.map(b => ({
+  ...b,
+  service: determineService(b),
+}));
+
 // Classification levels for comparison
 export const classificationLevels = [
   { key: "command", label: "פיקוד" },
   { key: "division", label: "אוגדה" },
   { key: "brigade", label: "חטיבה" },
   { key: "type", label: "סוג" },
+  { key: "service", label: "שירות" },
 ] as const;
 
 export type ClassificationKey = typeof classificationLevels[number]["key"];
@@ -3509,21 +3549,19 @@ export function compareBattalions(
       division: guess.division === target.division,
       brigade: guess.brigade === target.brigade,
       type: guess.type === target.type,
+      service: guess.service === target.service,
     },
     isCorrect: guess.id === target.id,
   };
 }
 
 export function getDailyBattalion(): Battalion {
-  // Use date as seed for daily puzzle — deterministic across all clients
-  // Mulberry32-style PRNG seeded with a stronger hash for good distribution
   const dateStr = getTodayKey();
-  let h = 0x811c9dc5; // FNV offset basis
+  let h = 0x811c9dc5;
   for (let i = 0; i < dateStr.length; i++) {
     h ^= dateStr.charCodeAt(i);
-    h = Math.imul(h, 0x01000193); // FNV prime
+    h = Math.imul(h, 0x01000193);
   }
-  // One round of Mulberry32 to scramble further
   let t = (h >>> 0) + 0x6d2b79f5;
   t = Math.imul(t ^ (t >>> 15), t | 1);
   t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
