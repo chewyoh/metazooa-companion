@@ -10,7 +10,8 @@ import {
 import { GuessInput } from "@/components/GuessInput";
 import { GuessHistory } from "@/components/GuessHistory";
 import { OrgTree } from "@/components/OrgTree";
-import { Trophy, HelpCircle, X, RefreshCw, Gamepad2, Network, Share2, Flame } from "lucide-react";
+import { TreeGraph } from "@/components/TreeGraph";
+import { Trophy, HelpCircle, X, RefreshCw, Gamepad2, Network, Share2, Flame, GitBranchPlus } from "lucide-react";
 
 import { toast } from "sonner";
 import { classificationLevels } from "@/data/idfUnits";
@@ -94,7 +95,7 @@ const Index = () => {
   const [lost, setLost] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [isFreePlay, setIsFreePlay] = useState(false);
-  const [activeTab, setActiveTab] = useState<"game" | "tree">("game");
+  const [activeTab, setActiveTab] = useState<"game" | "tree" | "graph">("game");
   const [streak, setStreak] = useState<StreakData>(() => loadStreak());
 
 
@@ -200,7 +201,7 @@ const Index = () => {
       </header>
 
       {/* Tab Switcher */}
-      <div className="flex gap-1 p-1 bg-muted rounded-lg mb-6 w-full max-w-xs">
+      <div className="flex gap-1 p-1 bg-muted rounded-lg mb-6 w-full max-w-md">
         <button
           onClick={() => setActiveTab("game")}
           className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 rounded-md text-sm font-medium transition-colors ${
@@ -211,6 +212,17 @@ const Index = () => {
         >
           <Gamepad2 className="w-4 h-4" />
           משחק
+        </button>
+        <button
+          onClick={() => setActiveTab("graph")}
+          className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 rounded-md text-sm font-medium transition-colors ${
+            activeTab === "graph"
+              ? "bg-background text-foreground shadow-sm"
+              : "text-muted-foreground hover:text-foreground"
+          }`}
+        >
+          <GitBranchPlus className="w-4 h-4" />
+          עץ ניחושים
         </button>
         <button
           onClick={() => setActiveTab("tree")}
@@ -321,6 +333,8 @@ const Index = () => {
             </div>
           </div>
         </>
+      ) : activeTab === "graph" ? (
+        <TreeGraph guesses={guesses} target={target} />
       ) : (
         <OrgTree onBattalionClick={(battalion) => {
           if (!won && !lost && !guessedIds.has(battalion.id)) {
