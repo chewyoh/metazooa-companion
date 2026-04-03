@@ -95,7 +95,7 @@ const Index = () => {
   const [lost, setLost] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [isFreePlay, setIsFreePlay] = useState(false);
-  const [activeTab, setActiveTab] = useState<"game" | "tree">("game");
+  const [activeTab, setActiveTab] = useState<"game" | "tree" | "graph">("game");
   const [streak, setStreak] = useState<StreakData>(() => loadStreak());
 
 
