@@ -145,7 +145,7 @@ function buildTree(): TreeNode[] {
 
 const unitTypeColors: Record<string, { bg: string; dot: string }> = {
   'חי"ר': { bg: "bg-amber-800/15", dot: "bg-amber-800" },
-  "שריון": { bg: "bg-gray-900/15", dot: "bg-gray-900 dark:bg-gray-300" },
+  "שריון": { bg: "bg-gray-900/15", dot: "bg-gray-900" },
   "צנחנים": { bg: "bg-red-500/15", dot: "bg-red-500" },
   "קומנדו": { bg: "bg-red-800/15", dot: "bg-red-800" },
   "סיור": { bg: "bg-emerald-500/15", dot: "bg-emerald-500" },
