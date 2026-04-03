@@ -10,7 +10,8 @@ import {
 import { GuessInput } from "@/components/GuessInput";
 import { GuessHistory } from "@/components/GuessHistory";
 import { OrgTree } from "@/components/OrgTree";
-import { Trophy, HelpCircle, X, RefreshCw, Gamepad2, Network, Share2, Flame } from "lucide-react";
+import { TreeGraph } from "@/components/TreeGraph";
+import { Trophy, HelpCircle, X, RefreshCw, Gamepad2, Network, Share2, Flame, GitBranchPlus } from "lucide-react";
 
 import { toast } from "sonner";
 import { classificationLevels } from "@/data/idfUnits";
