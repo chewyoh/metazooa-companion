@@ -201,7 +201,7 @@ const Index = () => {
       </header>
 
       {/* Tab Switcher */}
-      <div className="flex gap-1 p-1 bg-muted rounded-lg mb-6 w-full max-w-xs">
+      <div className="flex gap-1 p-1 bg-muted rounded-lg mb-6 w-full max-w-md">
         <button
           onClick={() => setActiveTab("game")}
           className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 rounded-md text-sm font-medium transition-colors ${
@@ -212,6 +212,17 @@ const Index = () => {
         >
           <Gamepad2 className="w-4 h-4" />
           משחק
+        </button>
+        <button
+          onClick={() => setActiveTab("graph")}
+          className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 rounded-md text-sm font-medium transition-colors ${
+            activeTab === "graph"
+              ? "bg-background text-foreground shadow-sm"
+              : "text-muted-foreground hover:text-foreground"
+          }`}
+        >
+          <GitBranchPlus className="w-4 h-4" />
+          עץ ניחושים
         </button>
         <button
           onClick={() => setActiveTab("tree")}
