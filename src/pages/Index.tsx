@@ -333,6 +333,8 @@ const Index = () => {
             </div>
           </div>
         </>
+      ) : activeTab === "graph" ? (
+        <TreeGraph guesses={guesses} target={target} />
       ) : (
         <OrgTree onBattalionClick={(battalion) => {
           if (!won && !lost && !guessedIds.has(battalion.id)) {
