@@ -2412,7 +2412,7 @@ const rawBattalions: BattalionBase[] = [
     division: 'אוגדה 162 "הפלדה"',
     divisionNumber: 162,
     command: "פיקוד דרום",
-    type: "שריון",
+    type: 'חי"ר',
   },
   {
     id: "res-5-8110",
@@ -2424,7 +2424,7 @@ const rawBattalions: BattalionBase[] = [
     division: 'אוגדה 162 "הפלדה"',
     divisionNumber: 162,
     command: "פיקוד דרום",
-    type: "שריון",
+    type: 'חי"ר',
   },
   {
     id: "res-5-8111",
@@ -2436,7 +2436,7 @@ const rawBattalions: BattalionBase[] = [
     division: 'אוגדה 162 "הפלדה"',
     divisionNumber: 162,
     command: "פיקוד דרום",
-    type: "שריון",
+    type: 'חי"ר',
   },
   {
     id: "res-5-6555",
